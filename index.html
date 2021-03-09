@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Carlos Arturo Miranda Trujano">
+    <meta name="DC.creator" content="Miranda Trujano Carlos Arturo">
+    <meta name="copyright" content="Carlos Arturo Miranda Trujano">
+    <meta name="description" content="¿Quieres ver una película en línea que no está en netflix o alguna otra plataforma y no quieres llenarte de virus? Yo te tiro esquina.">
+    <title>Una Película</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Padauk:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- <link rel="icon" type="image/png" href="assets/imgs/carlosarturomt_logo.png"> -->
+    <link rel="icon" type="image/png" href="/assets/icons/video-camera.png">
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- <link rel="stylesheet" href="/css/style.css"> -->
+    <link rel="stylesheet" href="css/styleMovie.css">
+</head>
+
+<body>
+    <!------------------------------------------ BARRA DE NAVEGACIÓN ------------------------------------------------>
+    <header class="nav_100-fixed">
+        <div class="logo">
+            <a href="index"><img class="logo" src="/assets/icons/video-camera.png" alt="CarlosArturoMT"></a>
+        </div>
+        <nav id="menu">
+            <ul class="navTop">
+                <li><a href="index">Inicio</a></li>
+                <li><a href="contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="menu-toggle">
+            <i class="fa fa-bars"></i>
+        </div>
+    </header>
+    <main>
+        <!-------------------------------- SECCIÓN "HOME"--------------------------------------->
+        <section class="container-details" id="particles-js">
+            <article>
+                <h4>¿Qué quieres ver hoy?</h4>
+                <form action="#" method="get">
+                    <input id="" class="input" type="search" name="q" placeholder="Busca..." required="required">
+                    <button type="submit" aria-label="Buscar" class="btn-buscar">
+                        <span class="buscar"></span>
+                    </button>
+                </form>
+            </article>
+            <section class="carousel">
+                <hgroup style="margin-top: 30px;">
+                    <h2 class="carousel-title">Mi lista</h2>
+                </hgroup>
+                <div class="carousel__container">
+                    <div class="carousel_item" id="rey">
+                        <img class="carousel-item__img" src="https://play-lh.googleusercontent.com/yqMqHTkHzM9QLZIEAmeSu7bM_NEb-CtAixsCWVkiwcQtUvHbDks_lDO9NBu0Red9VFCqOA" alt="Portada de Película">
+                        <div class="carousel-item__details">
+                            <button type="button" class="youtube--btn" aria-label="Abrir Pelícla">
+                                <a href="https://prueba.carlosarturomt.com/movie/EL%20REY%20LEÓN%20(1994).mp4" target="_blank" rel="noreferrer">
+                                    <span class="youtube--btn_ico"></span> 
+                                </a>
+                            </button>
+                            <p class="carousel-item__details--title">El Rey León</p>
+                            <p class="carousel-item__details--subtitle">1994</p>
+                        </div>
+                    </div>
+                    <div class="carousel_item">
+                        <img class="carousel-item__img" src="https://http2.mlstatic.com/D_NQ_NP_4160-MLA2771103790_062012-O.jpg" alt="Portada de Película">
+                        <div class="carousel-item__details">
+                            <button type="button" class="youtube--btn" aria-label="Abrir Pelícla">
+                                <a href="https://prueba.carlosarturomt.com/movie/QUÉ%20PASÓ%20AYER%20(2009).mp4" target="_blank" rel="noreferrer">
+                                    <span class="youtube--btn_ico"></span> 
+                                </a>
+                            </button>
+                            <p class="carousel-item__details--title">¿Qué pasó ayer?</p>
+                            <p class="carousel-item__details--subtitle">2009</p>
+                        </div>
+                    </div>
+                    <div class="carousel_item">
+                        <img class="carousel-item__img" src="https://zonavalue.com/wp-content/uploads/2019/10/lobo-wall-street-portada-716x1024.jpg" alt="Portada de Película">
+                        <div class="carousel-item__details">
+                            <button type="button" class="youtube--btn" aria-label="Abrir Pelícla">
+                                <a href="https://prueba.carlosarturomt.com/movie/EL%20LOBO%20DE%20WALL%20STREET%20(2013).mp4" target="_blank" rel="noreferrer">
+                                    <span class="youtube--btn_ico"></span> 
+                                </a>
+                            </button>
+                            <p class="carousel-item__details--title">El lobo de Wall Street</p>
+                            <p class="carousel-item__details--subtitle">2013</p>
+                        </div>
+                    </div>
+                    <div class="carousel_item">
+                        <img class="carousel-item__img" src="https://i.pinimg.com/564x/15/19/20/151920a22e8e1ec9cb773ce4ddf1d821.jpg" alt="Portada de Película">
+                        <div class="carousel-item__details">
+                            <button type="button" class="youtube--btn" aria-label="Abrir Pelícla">
+                                <a href="https://prueba.carlosarturomt.com/movie/SPIDERMAN%20UN%20NUEVO%20UNIVERSO%20(2018).mp4" target="_blank" rel="noreferrer">
+                                    <span class="youtube--btn_ico"></span> 
+                                </a>
+                            </button>
+                            <p class="carousel-item__details--title">Un nuevo universo</p>
+                            <p class="carousel-item__details--subtitle">2018</p>
+                        </div>
+                    </div>
+                    <div class="carousel_item">
+                        <img class="carousel-item__img" src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/cover_290x414/public/media/image/2016/11/spider-man-2.jpg?itok=yMNY6Mkr" alt="Portada de Película">
+                        <div class="carousel-item__details">
+                            <button type="button" class="youtube--btn" aria-label="Abrir Pelícla">
+                                <a href="https://prueba.carlosarturomt.com/movie/SPIDER-MAN%202%20(2004).mp4" target="_blank" rel="noreferrer">
+                                    <span class="youtube--btn_ico"></span> 
+                                </a>
+                            </button>
+                            <p class="carousel-item__details--title">El Hombre Araña 2</p>
+                            <p class="carousel-item__details--subtitle">2004</p>
+                        </div>
+                    </div>
+                    <div class="carousel_item">
+                        <img class="carousel-item__img" src="https://cnet1.cbsistatic.com/img/3u2sRdgcDijjmhequjsinGGvdak=/2019/10/23/86eea023-b4cf-40b4-8420-b59bf18c6891/screen-shot-2019-10-24-at-9-52-38-am.png" alt="Portada de Película">
+                        <div class="carousel-item__details">
+                            <button type="button" class="youtube--btn" aria-label="Abrir Pelícla">
+                                <a href="https://prueba.carlosarturomt.com/movie/LA%20MUJER%20MARAVILLA%201984%20(2020).mp4" target="_blank" rel="noreferrer">
+                                    <span class="youtube--btn_ico"></span> 
+                                </a>
+                            </button>
+                            <p class="carousel-item__details--title">Mujer Maravilla 1984</p>
+                            <p class="carousel-item__details--subtitle">2020</p>
+                        </div>
+                    </div>
+                    <div class="carousel_item">
+                        <img class="carousel-item__img" src="https://therwis.files.wordpress.com/2012/08/prometheus-dvd-cover-09nhgf.jpg" alt="Portada de Película">
+                        <div class="carousel-item__details">
+                            <button type="button" class="youtube--btn" aria-label="Abrir Pelícla">
+                                <a href="https://prueba.carlosarturomt.com/movie/PROMETEO%20(2012).mp4" target="_blank" rel="noreferrer">
+                                    <span class="youtube--btn_ico"></span> 
+                                </a>
+                            </button>
+                            <p class="carousel-item__details--title">Prometeo</p>
+                            <p class="carousel-item__details--subtitle">2012</p>
+                        </div>
+                    </div>
+                    <div class="carousel_item">
+                        <img class="carousel-item__img" src="https://cdnb.20m.es/cine-el-cielo-sobre-tatooine/files/2014/11/Interstellar-3.jpg" alt="Portada de Película">
+                        <div class="carousel-item__details">
+                            <button type="button" class="youtube--btn" aria-label="Abrir Pelícla">
+                                <a href="https://prueba.carlosarturomt.com/movie/INTERSTELLAR%20(2014).mp4" target="_blank" rel="noreferrer">
+                                    <span class="youtube--btn_ico"></span> 
+                                </a>
+                            </button>
+                            <p class="carousel-item__details--title">Interstellar</p>
+                            <p class="carousel-item__details--subtitle">2014</p>
+                        </div>
+                    </div>
+                    <div class="carousel_item">
+                        <img class="carousel-item__img" src="https://i.ytimg.com/vi/SUiavMWW5Vo/movieposter.jpg" alt="Portada de Película">
+                        <div class="carousel-item__details">
+                            <button type="button" class="youtube--btn" aria-label="Abrir Pelícla">
+                                <a href="https://prueba.carlosarturomt.com/movie/LA%20LLEGADA%20(2016).mp4" target="_blank" rel="noreferrer">
+                                    <span class="youtube--btn_ico"></span> 
+                                </a>
+                            </button>
+                            <p class="carousel-item__details--title">La Llegada</p>
+                            <p class="carousel-item__details--subtitle">2016</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section>
+            <!-- <hgroup>
+                <h2 class="carousel-title0 hidden">WandaVision</h2>
+            </hgroup> -->
+            <section class="carousel0">
+                <div class="carousel__container0">
+                    <div class="carousel_item0">
+                        <span class="carousel-item__img0"></span>
+                        <div class="carousel-item__details0">
+                            <div class="carousel-item__text0">
+                                <p class="carousel-item__details--title0">Temporada 1|2021</p>
+                                <p class="carousel-item__details--subtitle0"> <a href="https://prueba.carlosarturomt.com/movie/WV/capitulo%201.mp4" target="_blank" rel="noreferrer">Episodio 1</a>
+                                </p>
+                                <p class="carousel-item__details--subtitle0"> <a href="https://prueba.carlosarturomt.com/movie/WV/capitulo%202.mp4" target="_blank" rel="noreferrer">Episodio 2</a>
+                                </p>
+                                <p class="carousel-item__details--subtitle0"> <a href="https://prueba.carlosarturomt.com/movie/WV/capitulo%203.mp4" target="_blank" rel="noreferrer">Episodio 3</a>
+                                </p>
+                                <p class="carousel-item__details--subtitle0"> <a href="https://prueba.carlosarturomt.com/movie/WV/capitulo%204.mp4" target="_blank" rel="noreferrer">Episodio 4</a>
+                                </p>
+                                <p class="carousel-item__details--subtitle0"> <a href="https://prueba.carlosarturomt.com/movie/WV/capitulo%205.mp4" target="_blank" rel="noreferrer">Episodio 5</a>
+                                </p>
+                                <p class="carousel-item__details--subtitle0"> <a href="https://prueba.carlosarturomt.com/movie/WV/capitulo%206.mp4" target="_blank" rel="noreferrer">Episodio 6</a>
+                                </p>
+                                <p class="carousel-item__details--subtitle0"> <a href="https://prueba.carlosarturomt.com/movie/WV/capitulo%207.mp4" target="_blank" rel="noreferrer">Episodio 7</a>
+                                </p>
+                                <p class="carousel-item__details--subtitle0"> <a href="https://prueba.carlosarturomt.com/movie/WV/capitulo%208.mp4" target="_blank" rel="noreferrer">Episodio 8</a>
+                                </p>
+                                <p class="carousel-item__details--subtitle0"> <a href="https://prueba.carlosarturomt.com/movie/WV/capitulo%209.mp4" target="_blank" rel="noreferrer">Episodio 9</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section>
+            <!-- <hgroup>
+                <h2 class="carousel-title0 hidden">Rick and Morty</h2>
+            </hgroup> -->
+            <section class="carousel0">
+                <div class="carousel__container0">
+                    <div class="carousel_item0">
+                        <span class="carousel-item__img0RM"></span>
+                        <div class="carousel-item__details0">
+                            <div class="carousel-item__text0">
+                                <p class="carousel-item__details--title0">Rick and Morty</p>
+                                <p class="carousel-item__details--subtitle0"> <a href="https://prueba.carlosarturomt.com/rickMorty.html#season1" target="_blank" rel="noreferrer">Temporada 1</a>
+                                </p>
+                                <p class="carousel-item__details--subtitle0"> <a href="hhttps://prueba.carlosarturomt.com/rickMorty.html#season2" target="_blank" rel="noreferrer">Temporada 2</a>
+                                </p>
+                                <p class="carousel-item__details--subtitle0"> <a href="https://prueba.carlosarturomt.com/rickMorty.html#season3" target="_blank" rel="noreferrer">Temporada 3</a>
+                                </p>
+                                <p class="carousel-item__details--subtitle0"> <a href="https://prueba.carlosarturomt.com/rickMorty.html#season4" target="_blank" rel="noreferrer">Temporada 4</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section>
+            <article class="carousel1">
+                <hgroup>
+                    <h2 class="carousel-title1">Harry Potter</h2>
+                </hgroup>
+                <div class="carousel__container1">
+                    <div class="carousel_item1">
+                        <img class="carousel-item__img1" src="http://es.web.img2.acsta.net/pictures/14/04/30/11/55/592219.jpg" alt="Portada de Película">
+                        <div class="carousel-item__details1">
+                            <div class="carousel-item__text">
+                                <button type="button" class="youtube--btn" aria-label="Abrir Pelícla">
+                                    
+                                    <a href="https://prueba.carlosarturomt.com/movie/HP/LA%20PIEDRA%20FILOSOFAL%20(2001).mp4" target="_blank" rel="noreferrer">
+                                        <span class="youtube--btn_ico"></span> 
+                                    </a>
+                                </button>
+                                <p class="carousel-item__details--title1">La Piedra Filosofal
+                                </p>
+                                <p class="carousel-item__details--subtitle1">2001</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel_item1">
+                        <img class="carousel-item__img1" src="https://static.posters.cz/image/750/marco-de-plastico-harry-potter-chamber-of-secrets-i69609.jpg" alt="Portada de Película">
+                        <div class="carousel-item__details1">
+                            <div class="carousel-item__text">
+                                <button type="button" class="youtube--btn" aria-label="Abrir Pelícla">
+                                <a href="https://prueba.carlosarturomt.com/movie/HP/LA%20CÁMARA%20SECRETA%20(2002)mp4.mp4" target="_blank" rel="noreferrer">
+                                    <span class="youtube--btn_ico"></span> 
+                                </a>
+                            </button>
+                                <p class="carousel-item__details--title1">La Cámara Secreta</p>
+                                <p class="carousel-item__details--subtitle1">2002</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel_item1">
+                        <img class="carousel-item__img1" src="https://m.media-amazon.com/images/I/71J22VUSXNL._AC_SY741_.jpg" alt="Portada de Película">
+                        <div class="carousel-item__details1">
+                            <div class="carousel-item__text">
+                                <button type="button" class="youtube--btn" aria-label="Abrir Pelícla">
+                                <a href="https://prueba.carlosarturomt.com/movie/HP/EL%20PRISIONERO%20DE%20AZKABAN%20(2004).mp4" target="_blank" rel="noreferrer">
+                                    <span class="youtube--btn_ico"></span> 
+                                </a>
+                            </button>
+                                <p class="carousel-item__details--title1">El Prisionero de Azkaban</p>
+                                <p class="carousel-item__details--subtitle1">2004</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel_item1">
+                        <img class="carousel-item__img1" src="https://images-na.ssl-images-amazon.com/images/I/51pFF7a2j%2BL._AC_.jpg" alt="Portada de Película">
+                        <div class="carousel-item__details1">
+                            <div class="carousel-item__text">
+                                <button type="button" class="youtube--btn" aria-label="Abrir Pelícla">
+                                <a href="https://prueba.carlosarturomt.com/movie/HP/EL%20CÁLIZ%20DE%20FUEGO%20(2005).mp4" target="_blank" rel="noreferrer">
+                                    <span class="youtube--btn_ico"></span> 
+                                </a>
+                            </button>
+                                <p class="carousel-item__details--title1">El Cáliz de Fuego</p>
+                                <p class="carousel-item__details--subtitle1">2005</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel_item1">
+                        <img class="carousel-item__img1" src="https://image.posterlounge.es/images/l/1893813.jpg">
+                        <div class="carousel-item__details1">
+                            <div class="carousel-item__text">
+                                <button type="button" class="youtube--btn" aria-label="Abrir Pelícla">
+                                <a href="https://prueba.carlosarturomt.com/movie/HP/LA%20ORDEN%20DEL%20FÉNIX%20(2007).mp4" target="_blank" rel="noreferrer">
+                                    <span class="youtube--btn_ico"></span> 
+                                </a>
+                            </button>
+                                <p class="carousel-item__details--title1">La Orden del Fénix</p>
+                                <p class="carousel-item__details--subtitle1">2007</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel_item1">
+                        <img class="carousel-item__img1" src="https://in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/harry-potter-and-the-half-blood-prince-et00001559-03-02-2021-11-14-20.jpg" alt="Portada de Película">
+                        <div class="carousel-item__details1">
+                            <div class="carousel-item__text">
+                                <button type="button" class="youtube--btn" aria-label="Abrir Pelícla">
+                                <a href="https://prueba.carlosarturomt.com/movie/HP/EL%20PRINCIPE%20MESTIZO%20(2009).mp4" target="_blank" rel="noreferrer">
+                                    <span class="youtube--btn_ico"></span> 
+                                </a>
+                            </button>
+                                <p class="carousel-item__details--title1">El Misterio del Príncipe</p>
+                                <p class="carousel-item__details--subtitle1">2009</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel_item1">
+                        <img class="carousel-item__img1" src="https://m.media-amazon.com/images/I/51-zuZSKWjL.jpg" alt="Portada de Película">
+                        <div class="carousel-item__details1">
+                            <div class="carousel-item__text">
+                                <button type="button" class="youtube--btn" aria-label="Abrir Pelícla">
+                                <a href="https://prueba.carlosarturomt.com/movie/HP/LAS%20RELIQUIAS%20DE%20LA%20MUERTE%20(2010).mp4" target="_blank" rel="noreferrer">
+                                    <span class="youtube--btn_ico"></span> 
+                                </a>
+                            </button>
+                                <p class="carousel-item__details--title1">Las Reliquias de la Muerte</p>
+                                <p class="carousel-item__details--subtitle1">2010</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel_item1">
+                        <img class="carousel-item__img1" src="https://es.web.img2.acsta.net/medias/nmedia/18/78/64/49/19757335.jpg" alt="Portada de Película">
+                        <div class="carousel-item__details1">
+                            <div class="carousel-item__text">
+                                <button type="button" class="youtube--btn" aria-label="Abrir Pelícla">
+                                <a href="https://prueba.carlosarturomt.com/movie/HP/LAS%20RELIQUIAS%20DE%20LA%20MUERTE%20(2011).mp4" target="_blank" rel="noreferrer">
+                                    <span class="youtube--btn_ico"></span> 
+                                </a>
+                            </button>
+                                <p class="carousel-item__details--title1">Las Reliquias de la Muerte</p>
+                                <p class="carousel-item__details--subtitle1">2011</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!----------------------------------- BOTÓN FLOTANTE Y PIE DE PÁGINA -------------------------------------------->
+    <footer>
+        <article class="container_info">
+            <h4>
+                <span>&copy;</span>
+                <span>2021</span>
+                <span>UnaPelícula</span>
+            </h4>
+        </article>
+        <!-- <article class="container_social">
+            <a href="https://www.facebook.com/psic.carlosarturomt1" target="_blank " rel="noreferrer"> <span class="facebook"></span>
+            </a>
+            <a href="https://www.instagram.com/arturo.kennedy1" target="_blank " rel="noreferrer"> <span class="instagram"></span>
+            </a>
+            <a href="https://github.com/carlosarturomt1" target="_blank " rel="noreferrer">
+                <span class="github"></span>
+            </a>
+            <a href="https://www.linkedin.com/in/carlosarturomt1" target="_blank " rel="noreferrer"> <span class="linkedin"></span>
+            </a>
+        </article> -->
+    </footer>
+</body>
+<!-- particles -->
+<script src="../particles.js"></script>
+<script src="js/app.js"></script>
+<script src="js/lib/stats.js"></script>
+<!-- scripts -->
+<!-- <script src="js/animacion.js "></script> -->
+<!-- <script src="js/theme.js "></script> -->
+<script src="./js/search.js"></script>
+<script src="js/toggle.js "></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+<script src="https://kit.fontawesome.com/2c36e9b7b1.js " crossorigin="anonymous " aria-label="Dark Theme "></script>
+
+</html>

@@ -1,0 +1,86 @@
+.main-details-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.header--image-container {
+    margin-top: -10rem;
+    justify-content: space-between;
+    width: auto;
+    margin-left: 5rem;
+    min-width: 120px;
+    max-width: 300px;
+    order: 1;
+}
+
+.about-detail--text {
+    margin-top: -5rem;
+    width: 100%;
+    min-width: 120px;
+    max-width: 2800px;
+    margin-left: 0px;
+    margin-right: 0rem;
+    flex: 8;
+    order: 2;
+    flex-grow: 4;
+}
+
+.header--text-container {
+    max-width: 2800px;
+}
+
+.header--title-container {
+    width: 100%;
+    min-width: 120px;
+    max-width: 2800px;
+    margin-top: 100px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 100px;
+    order: 0;
+}
+
+
+/* .main-experience-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.card1 {
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 5rem;
+    min-width: 120px;
+    max-width: 300px;
+    order: 0;
+}
+
+.card2 {
+    margin-top: 2rem;
+    justify-content: space-between;
+    width: auto;
+    margin-left: 1rem;
+    margin-right: 5rem;
+    min-width: 120px;
+    max-width: 1400px;
+    flex: 8;
+    order: 1;
+}
+
+.experience-detail--card {
+    width: auto;
+    min-width: 120px;
+    max-width: 1400px;
+}
+
+.hidden1 {
+    visibility: inherit;
+    display: block;
+}
+
+.card2 .card-title {
+    visibility: hidden;
+    display: none;
+} */

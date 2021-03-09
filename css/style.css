@@ -1,0 +1,288 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.carousel {
+    position: absolute !important;
+    top: 250px;
+    border: solid red;
+    width: auto;
+    margin: 0 auto !important;
+    overflow: scroll;
+    overflow-y: hidden;
+    padding: 30px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.carousel-title {
+    color: white;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.carousel__container {
+    white-space: nowrap;
+    margin-left: 70px 0px;
+    padding-top: 35px;
+    padding-bottom: 10px;
+}
+
+.carousel_item {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 450ms all;
+    transform-origin: center left;
+}
+
+.carousel_item:hover~.carousel_item {
+    transform: translate3d(100px, 0, 0);
+}
+
+.carousel__container:hover .carousel_item {
+    opacity: 0.5;
+}
+
+.carousel__container:hover .carousel_item:hover {
+    transform: scale(1.3);
+    opacity: 1;
+}
+
+.carousel-item__img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.carousel-item__details {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+    font-size: 1rem;
+    opacity: 0;
+    transition: 450ms opacity;
+    padding: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: 150px;
+}
+
+.carousel-item__details img {
+    width: 23px;
+    padding: 1px;
+}
+
+.carousel-item__details p {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 1px;
+}
+
+.carousel-item__details:hover {
+    opacity: 1;
+}
+
+
+/* .login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 30px;
+    margin-top: 30px;
+    min-height: calc(100vh - 200px);
+    margin-bottom: 3rem;
+} */
+
+
+/* .login h2 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 5vh;
+} */
+
+
+/* .login__container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 90%;
+    border: 2px solid white;
+    border-radius: 40px;
+    color: white;
+    padding: 60px 50px 40px;
+    min-height: 700px;
+    min-width: 300px;
+    max-width: 500px;
+} */
+
+
+/* .login__container--form {
+    display: flex;
+    flex-direction: column;
+} */
+
+.login__container--form label {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.login__container--rememberMe {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.login__container--rememberMe a {
+    color: white;
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+
+.login__container a:hover {
+    text-decoration: underline;
+}
+
+.login__container--socia-media>div {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+
+/* .login__container--socia-media>div>img {
+    width: 28px;
+    margin-right: 10px;
+} */
+
+.login__container p {
+    color: white;
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+
+.login__container--register a {
+    color: white;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.input--register {
+    color: white;
+    background-color: transparent;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 2px solid white;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    padding: 0px 20px;
+    outline: none;
+    height: 50px;
+}
+
+.button {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: bold;
+    height: 50px;
+    letter-spacing: 1px;
+    margin: 10px 0px;
+    outline: none;
+}
+
+.button:hover {
+    background-color: rgba(137, 43, 226, 0.212);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.pulse {
+    animation-name: pulse;
+    animation-duration: 1s;
+}
+
+.notFound img {
+    display: flex;
+    margin: 0 auto;
+    width: 100px;
+    margin-top: 12vh;
+}
+
+.notFound>h2 {
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 10rem;
+}
+
+.notFound>p {
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40vh;
+    justify-content: space-between;
+}
+
+footer h3 {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 1rem;
+    border-top: white solid 0.1px;
+    bottom: 0;
+}
+
+h3 {
+    text-align: center;
+}
+
+h3>a {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+h3>a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+    .login__container {
+        background-color: transparent;
+        border: none;
+        padding: 1rem;
+        width: 100%;
+    }
+}
