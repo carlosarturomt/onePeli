@@ -96,7 +96,7 @@
 <?php
     if (isset($_POST['btn-submit'])) {
 
-        $asunto = "Correo desde la web";
+        $asunto = "Correo desde UnaPeli";
         $mensaje = test_input($_POST['mensaje']);
         $numero = test_input($_POST['numero']);
         $nombre = test_input($_POST['nombre']);

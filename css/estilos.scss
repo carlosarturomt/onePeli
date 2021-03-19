@@ -495,12 +495,10 @@ a {
 // Ultimas Agregadas
 .carousel2 {
     width: 100%;
-    // margin-top: 135px;
-    // border: red solid;
-    overflow: scroll;
+    overflow: none;
     overflow-y: hidden;
-    overscroll-behavior-x: contain;
-    scroll-snap-type: x proximity;
+    // overscroll-behavior-x: contain;
+    // scroll-snap-type: x proximity;
     padding: 0 30px 50px;
     margin-bottom: 30px;
     @media screen and (max-width: 500px) {
@@ -529,10 +527,12 @@ a {
 }
 
 .carousel__container2 {
-    white-space: nowrap;
     margin-left: 70px 0px;
     padding-top: 35px;
     padding-bottom: 10px;
+    @media screen and (max-width: 500px) {
+        white-space: nowrap;
+    }
 }
 
 .carousel_item2 {
@@ -567,9 +567,11 @@ a {
 }
 
 .carousel__container2:hover .carousel_item2:hover {
+    // border: solid red;
     scroll-snap-align: center;
     transform: scale(1.3);
     opacity: 1;
+    z-index: 1;
 }
 
 .carousel-item__img2 {
@@ -586,6 +588,7 @@ a {
     // border: solid red;
     background: rgb(255, 255, 255);
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0) 100%);
+    border-radius: 20px;
     font-size: 1rem;
     opacity: 0;
     transition: 450ms opacity;
@@ -598,11 +601,11 @@ a {
 
 .carousel-item__text2 {
     // border: solid red;
-    width: 133px;
-    margin: 0 2.5%;
+    width: 135px;
+    margin: 0 2%;
     position: absolute;
-    top: 5%;
-    padding-top: 70%;
+    top: 0%;
+    padding-top: 85%;
     @media screen and (max-width: 500px) {
         width: 90%;
         margin: 0 5%;
@@ -614,23 +617,23 @@ a {
 .carousel-item__details2 .carousel-item__details--title2 {
     width: 180px;
     color: white;
-    font-size: 1rem;
-    font-weight: 600;
+    font-size: 0.9rem;
+    font-weight: bold;
     padding: 0px;
     @media screen and (max-width: 500px) {
         width: 100%;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 }
 
 .carousel-item__details2 .carousel-item__details--subtitle2 {
     color: white;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     font-weight: 500;
     padding: 0px;
     @media screen and (max-width: 500px) {
         width: 100%;
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 }
 
@@ -657,8 +660,6 @@ a {
     color: white;
     font-size: 2rem;
     padding: 1rem;
-    // text-transform: uppercase;
-    // font-style: oblique;
     @media screen and (max-width: 500px) {
         text-align: center;
     }
@@ -675,6 +676,7 @@ a {
 }
 
 .carousel_item1 {
+    position: relative;
     align-items: center;
     border: 2px solid $azultext;
     overflow: hidden;
@@ -684,7 +686,7 @@ a {
     width: 144px;
     height: 200PX;
     border-radius: 20px;
-    cursor: pointer;
+    // cursor: pointer;
     @media screen and (max-width: 500px) {
         position: relative;
         width: 100%;
@@ -706,6 +708,7 @@ a {
 }
 
 .carousel__container1:hover .carousel_item1:hover {
+    cursor: pointer;
     transform: scale(1.3);
     opacity: 1;
     @media screen and (max-width: 500px) {
@@ -728,6 +731,7 @@ a {
 }
 
 .carousel-item__details1 {
+    position: absolute;
     background: rgb(255, 255, 255);
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0) 100%);
     font-size: 1rem;
@@ -738,29 +742,25 @@ a {
     right: 0;
     bottom: 0;
     padding-top: 150px;
-    @media screen and (max-width: 500px) {
-        position: absolute;
-    }
 }
 
 .carousel-item__text {
-    // border: solid red;
     width: 133px;
     margin: 0 2.5%;
     position: absolute;
-    top: 48%;
+    top: 0%;
+    padding-top: 85%;
     @media screen and (max-width: 500px) {
         width: 90%;
         margin: 0 5%;
-        position: absolute;
-        top: 79%;
+        top: 15%;
     }
 }
 
 .carousel-item__details1 .carousel-item__details--title1 {
     width: 180px;
     color: white;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 600;
     padding: 0px;
     @media screen and (max-width: 500px) {
@@ -771,7 +771,7 @@ a {
 
 .carousel-item__details1 .carousel-item__details--subtitle1 {
     color: white;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     font-weight: 500;
     padding: 0px;
     @media screen and (max-width: 500px) {
@@ -939,21 +939,18 @@ canvas {
     width: 100%;
     height: auto;
     padding-top: 60px;
-    // background-color: #00313f;
+    background: rgb(137, 33, 192);
+    background: linear-gradient(180deg, rgba(137, 33, 192, 1) 0%, rgba(0, 14, 32, 1) 71%, rgba(0, 14, 32, 1) 100%);
 }
 
 .container-details article {
     // border: red solid;
-    position: absolute;
+    // position: absolute;
     width: 90%;
     top: 20vh;
     margin-left: 5%;
     padding: 1rem;
     border-radius: 10px;
-    body.dark & {
-        // background: $azulHover;
-        // border: $azulshadow solid 0.5px;
-    }
 }
 
 .container-details article h1 {
@@ -1077,7 +1074,7 @@ canvas {
 #particles-js {
     transition: .3s ease all;
     width: 100%;
-    height: 115vh;
+    height: 50vh;
     background: rgb(137, 33, 192);
     background: linear-gradient(180deg, rgba(137, 33, 192, 1) 0%, rgba(0, 14, 32, 1) 71%, rgba(0, 14, 32, 1) 100%);
     // background-image: url('/assets/imgs/moviesGradiantG.jpg');
@@ -1085,7 +1082,7 @@ canvas {
     background-position: center;
     background-repeat: no-repeat;
     @media screen and (max-width: 500px) {
-        height: 105vh;
+        height: 50vh;
     }
 }
 

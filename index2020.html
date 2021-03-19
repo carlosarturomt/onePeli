@@ -2,120 +2,1376 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Platzi Vídeo</title>
-    <link rel="icon" type="img/svg" href="https://platzistaging.s3-us-west-2.amazonaws.com/commons/assets/image/isotipoPlatzi442ccc1186a9806e18c9889cc301ffe1.png">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Carlos Arturo Miranda Trujano">
+    <meta name="DC.creator" content="Miranda Trujano Carlos Arturo">
+    <meta name="copyright" content="Carlos Arturo Miranda Trujano">
+    <meta name="description" content="¿Quieres ver una película en línea que no está en netflix o alguna otra plataforma y no quieres llenarte de virus? Yo te tiro esquina.">
+    <meta property="og:site_name" content="unaPeli">
+    <meta property="og:title" content="Disfruta de Películas en línea.">
+    <meta property="og:description" content="¿Quieres ver una película en línea Gratisss? Yo te tiro esquina.">
+    <meta property="og:image" content="https://i.blogs.es/738916/mejores-peliculas/450_1000.jpeg">
+    <meta property="og:image:url" content="https://i.blogs.es/738916/mejores-peliculas/450_1000.jpeg">
+    <meta property="og:url" content="https://prueba.carlosarturomt.com">
+    <meta property="og:type" content="blog">
+    <meta itemprop="image" content="https://i.blogs.es/738916/mejores-peliculas/450_1000.jpeg">
+    <meta name="twitter:image" content="https://i.blogs.es/738916/mejores-peliculas/450_1000.jpeg">
+    <meta itemprop="image" content="https://i.blogs.es/738916/mejores-peliculas/450_1000.jpeg">
+    <title>Una Película</title>
+    <link rel="image_src" href="https://i.blogs.es/738916/mejores-peliculas/450_1000.jpeg">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Padauk:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/png" href="/assets/icons/video-camera.png">
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- <link rel="stylesheet" href="/css/style.css"> -->
+    <link rel="stylesheet" href="css/styleMovie.css">
 </head>
 
 <body>
-    <header class="header">
-        <div class="header__img">
-            <a href="index.html"> <img src="./assets/icons/logo-platzi-video-BW2.png" alt="Logo de Platzi Video">
-            </a>
+    <!------------------------------------------ BARRA DE NAVEGACIÓN ------------------------------------------------>
+    <header class="nav_100-fixed">
+        <div class="logo">
+            <a href="index"><img class="logo" src="/assets/icons/video-camera.png" alt="CarlosArturoMT"></a>
         </div>
-        <div class="header__menu">
-            <div class="header__menu--profile">
-                <img src="./assets/icons/user-icon.png" alt="Imagen de Perfil">
-                <p>Perfil</p>
-            </div>
-            <ul>
-                <li>
-                    <a href="inicioSesion.html">Cuenta</a></li>
-                <li>
-                    <a href="notFound.html">Cerrar Sesión</a></li>
+        <nav id="menu">
+            <ul class="navTop">
+                <li><a href="index">Inicio</a></li>
+                <li><a href="contacto">Contacto</a></li>
             </ul>
+        </nav>
+        <div class="menu-toggle">
+            <i class="fa fa-bars"></i>
         </div>
     </header>
     <main>
-        <section class="main">
-            <h2 class="main__title">¿Qué quieres ver hoy?</h2>
-            <input class="input" type="text" placeholder="Buscar...">
+        <!-------------------------------- SECCIÓN "HOME"--------------------------------------->
+        <section class="container-details" id="particles-js">
+            <article>
+                <h4>¿Qué quieres ver hoy?</h4>
+                <form action="">
+                    <input id="barra-busqueda" class="input" type="text" placeholder="Busca..." value="" required="required">
+                    <button type="" aria-label="Buscar" class="btn-buscar">
+                        <span class="buscar"></span>
+                    </button>
+                </form>
+                <!-- <form action="">
+                    <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
+                </form> -->
+                <div class="categorias" id="categorias">
+                    <a href="#" class="activo">Todos</a>
+                    <a href="#">Accion</a>
+                    <a href="#">Animacion</a>
+                    <a href="#">CienciaFiccion</a>
+                    <a href="#">Comedia</a>
+                </div>
+            </article>
+            <section class="carousel">
+                <hgroup style="margin-top: 30px;">
+                    <h2 class="carousel-title">Mi lista</h2>
+                </hgroup>
+                <div class="carousel__container">
+                    <!-- WandaVision -->
+                    <div class="carousel_item">
+                        <img class="carousel-item__img" src="https://www.magazine-hd.com/apps/wp/wp-content/uploads/2020/09/wandavision-poster-691x1024.jpg" alt="Portada de Película">
+                        <div class="carousel-item__details">
+                            <button type="button" class="youtube--btn" aria-label="Abrir Pelícla">
+                                <a href="https://prueba.carlosarturomt.com/wandaVision" rel="noreferrer">
+                                    <span class="youtube--btn_ico"></span> 
+                                </a>
+                            </button>
+                            <p class="carousel-item__details--title">WandaVision</p>
+                            <p class="carousel-item__details--subtitle">2021|1 Temporada</p>
+                        </div>
+                    </div>
+                    <!-- Rick and Morty -->
+                    <div class="carousel_item">
+                        <img class="carousel-item__img" src="https://ae01.alicdn.com/kf/HTB1eUeOSpXXXXaEXVXXq6xXFXXXt/Env-o-libre-24x31-pulgadas-Rick-Y-Morty-Cartel-HD-HOME-Decor-WALL-ART-Personalizada-IMPRESI.jpg" alt="Portada de Película">
+                        <div class="carousel-item__details">
+                            <button type="button" class="youtube--btn" aria-label="Abrir Pelícla">
+                                <a href="https://prueba.carlosarturomt.com/rickMorty" rel="noreferrer">
+                                    <span class="youtube--btn_ico"></span> 
+                                </a>
+                            </button>
+                            <p class="carousel-item__details--title">Rick and Morty</p>
+                            <p class="carousel-item__details--subtitle">2013|4 Temporadas</p>
+                        </div>
+                    </div>
+                    <!-- El Rey León -->
+                    <div class="carousel_item">
+                        <img class="carousel-item__img" src="https://play-lh.googleusercontent.com/yqMqHTkHzM9QLZIEAmeSu7bM_NEb-CtAixsCWVkiwcQtUvHbDks_lDO9NBu0Red9VFCqOA" alt="Portada de Película">
+                        <div class="carousel-item__details">
+                            <button type="button" class="youtube--btn" aria-label="Abrir Pelícla">
+                                <a href="https://prueba.carlosarturomt.com/movie/EL%20REY%20LEÓN%20(1994).mp4" target="_blank" rel="noreferrer">
+                                    <span class="youtube--btn_ico"></span> 
+                                </a>
+                            </button>
+                            <p class="carousel-item__details--title">El Rey León</p>
+                            <p class="carousel-item__details--subtitle">1994</p>
+                        </div>
+                    </div>
+                    <!-- SpiderMan-Un Nuevo Universo -->
+                    <div class="carousel_item">
+                        <img class="carousel-item__img" src="https://i.pinimg.com/564x/15/19/20/151920a22e8e1ec9cb773ce4ddf1d821.jpg" alt="Portada de Película">
+                        <div class="carousel-item__details">
+                            <button type="button" class="youtube--btn" aria-label="Abrir Pelícla">
+                                <a href="https://prueba.carlosarturomt.com/movie/SPIDERMAN%20UN%20NUEVO%20UNIVERSO%20(2018).mp4" target="_blank" rel="noreferrer">
+                                    <span class="youtube--btn_ico"></span> 
+                                </a>
+                            </button>
+                            <p class="carousel-item__details--title">Un nuevo universo</p>
+                            <p class="carousel-item__details--subtitle">2018</p>
+                        </div>
+                    </div>
+                    <!-- El Hombre Araña 2 -->
+                    <div class="carousel_item">
+                        <img class="carousel-item__img" src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/cover_290x414/public/media/image/2016/11/spider-man-2.jpg?itok=yMNY6Mkr" alt="Portada de Película">
+                        <div class="carousel-item__details">
+                            <button type="button" class="youtube--btn" aria-label="Abrir Pelícla">
+                                <a href="https://prueba.carlosarturomt.com/movie/SPIDER-MAN%202%20(2004).mp4" target="_blank" rel="noreferrer">
+                                    <span class="youtube--btn_ico"></span> 
+                                </a>
+                            </button>
+                            <p class="carousel-item__details--title">El Hombre Araña 2</p>
+                            <p class="carousel-item__details--subtitle">2004</p>
+                        </div>
+                    </div>
+                    <!-- Megamente -->
+                    <div class="carousel_item">
+                        <img class="carousel-item__img" src="https://pics.filmaffinity.com/Megamind-357741735-large.jpg" alt="Portada de Película">
+                        <div class="carousel-item__details">
+                            <button type="button" class="youtube--btn" aria-label="Abrir Pelícla">
+                                <a href="https://femax20.com/v/0d7wlhl7qy3zl64" target="_blank" rel="noreferrer">
+                                    <span class="youtube--btn_ico"></span> 
+                                </a>
+                            </button>
+                            <p class="carousel-item__details--title">Megamente</p>
+                            <p class="carousel-item__details--subtitle">2010|Infantil/Comedia</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </section>
-        <section class="carousel">
+
+        <section class="grid" id="grid">
             <hgroup>
-                <h2 class="carousel-title">Mi lista</h2>
+                <h2 class="carousel-title2 ">Últimas agregadas</h2>
             </hgroup>
-            <div class="carousel__container">
-                <div class="carousel_item">
-                    <img class="carousel-item__img" src="https://cdn.pixabay.com/photo/2017/06/16/10/14/underwater-2408569_960_720.jpg" alt="Submarino Modelo Mujer Joven Retrato">
-                    <div class="carousel-item__details">
-                        <div>
-                            <img src="./assets/icons/play-icon.png" alt="Reproducir">
-                            <img src="./assets/icons/plus-icon.png" alt="Agregar a Favoritos">
+
+            <!-- Capitán América -->
+            <div class="item" data-categoria="accion" data-etiquetas="marvel capitan america super heroes" data-descripcion="1.- Lorem ipsum dolor sit amet consectetur.">
+                <div class="item-contenido">
+                    <img class="carousel-item__img2" src="https://i.pinimg.com/originals/1d/3e/64/1d3e64cf36257fb215c67c350dc7398b.png" alt="Portada de Película">
+                    <div class="carousel-item__details2">
+                        <div class="carousel-item__text2">
+                            <button type="button" class="youtube--btn" aria-label="Abrir Pelícla">
+                                        <a href="https://femax20.com/v/dz48dtx7-yngwkx" target="_blank" rel="noreferrer">
+                                            <span class="youtube--btn_ico"></span> 
+                                        </a>
+                                    </button>
+                            <p class="carousel-item__details--title2">Capitán América</p>
+                            <p class="carousel-item__details--subtitle2">2011|Acción/Aventura</p>
                         </div>
-                        <p class="carousel-item__details--title">Título Descriptivo</p>
-                        <p class="carousel-item__details--subtitle">2019 16+114minutos</p>
-                    </div>
-                </div>
-                <div class="carousel_item">
-                    <img class="carousel-item__img" src="https://cdn.pixabay.com/photo/2015/06/19/09/39/lonely-814631_960_720.jpg" alt=" Lonely Hombre Sesión Ocio Descanso Git Cuerpo">
-                    <div class="carousel-item__details">
-                        <div>
-                            <img src="./assets/icons/play-icon.png" alt="Reproducir">
-                            <img src="./assets/icons/plus-icon.png" alt="Agregar a Favoritos">
-                        </div>
-                        <p class="carousel-item__details--title">Título Descriptivo</p>
-                        <p class="carousel-item__details--subtitle">2019 16+114minutos</p>
-                    </div>
-                </div>
-                <div class="carousel_item">
-                    <img class="carousel-item__img" src="https://cdn.pixabay.com/photo/2020/11/10/01/34/pet-5728249_960_720.jpg" alt=" Mascota Gato Retrato Perfil Gato Blanco">
-                    <div class="carousel-item__details">
-                        <div>
-                            <img src="./assets/icons/play-icon.png" alt="Reproducir">
-                            <img src="./assets/icons/plus-icon.png" alt="Agregar a Favoritos">
-                        </div>
-                        <p class="carousel-item__details--title">Título Descriptivo</p>
-                        <p class="carousel-item__details--subtitle">2019 16+114minutos</p>
-                    </div>
-                </div>
-                <div class="carousel_item">
-                    <img class="carousel-item__img" src="https://cdn.pixabay.com/photo/2020/12/27/14/37/woman-5864279_960_720.jpg" alt=" Mujer La Moda Modelo Niña Mujeres Plantean Sombra">
-                    <div class="carousel-item__details">
-                        <div>
-                            <img src="./assets/icons/play-icon.png" alt="Reproducir">
-                            <img src="./assets/icons/plus-icon.png" alt="Agregar a Favoritos">
-                        </div>
-                        <p class="carousel-item__details--title">Título Descriptivo</p>
-                        <p class="carousel-item__details--subtitle">2019 16+114minutos</p>
-                    </div>
-                </div>
-                <div class="carousel_item">
-                    <img class="carousel-item__img" src="https://cdn.pixabay.com/photo/2017/05/13/12/40/fashion-2309519_960_720.jpg" alt="La Moda Hermosa Mujer Mujer Sombrero Recubrimiento">
-                    <div class="carousel-item__details">
-                        <div>
-                            <img src="./assets/icons/play-icon.png" alt="Reproducir">
-                            <img src="./assets/icons/plus-icon.png" alt="Agregar a Favoritos">
-                        </div>
-                        <p class="carousel-item__details--title">Título Descriptivo</p>
-                        <p class="carousel-item__details--subtitle">2019 16+114minutos</p>
-                    </div>
-                </div>
-                <div class="carousel_item">
-                    <img class="carousel-item__img" src="https://cdn.pixabay.com/photo/2015/03/17/14/05/sparkler-677774_960_720.jpg" alt=" Sparkler Explotación Manos Fuegos Artificiales">
-                    <div class="carousel-item__details">
-                        <div>
-                            <img src="./assets/icons/play-icon.png" alt="Reproducir">
-                            <img src="./assets/icons/plus-icon.png" alt="Agregar a Favoritos">
-                        </div>
-                        <p class="carousel-item__details--title">Título Descriptivo</p>
-                        <p class="carousel-item__details--subtitle">2019 16+114minutos</p>
                     </div>
                 </div>
             </div>
+            <!-- Capitán América 2-->
+            <div class="item" data-categoria="accion" data-etiquetas="marvel capitan america soldado invierno super heroes" data-descripcion="1.- Lorem ipsum dolor sit amet consectetur.">
+                <div class="item-contenido">
+                    <img class="carousel-item__img2" src="https://static.posters.cz/image/1300/poster/capitan-america-el-soldado-de-invierno-one-sheet-i19272.jpg" alt="Portada de Película">
+                    <div class="carousel-item__details2">
+                        <div class="carousel-item__text2">
+                            <button type="button" class="youtube--btn" aria-label="Abrir Pelícla">
+                                        <a href="https://femax20.com/v/8q67jb8yknjdxg4" target="_blank" rel="noreferrer">
+                                            <span class="youtube--btn_ico"></span> 
+                                        </a>
+                                    </button>
+                            <p class="carousel-item__details--title2">El Soldado del Invierno</p>
+                            <p class="carousel-item__details--subtitle2">2014|Acción/Aventura</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Capitán América 3 -->
+            <div class="item" data-categoria="accion" data-etiquetas="marvel capitan america civil war civilwar super heroes" data-descripcion="2.- Lorem ipsum dolor sit amet consectetur.">
+                <div class="item-contenido">
+                    <img class="carousel-item__img2" src="https://static.posters.cz/image/750/poster/capitan-america-civil-war-face-off-i30254.jpg" alt="Portada de Película">
+                    <div class="carousel-item__details2">
+                        <div class="carousel-item__text2">
+                            <button type="button" class="youtube--btn" aria-label="Abrir Pelícla">
+                                        <a href="https://femax20.com/v/3p2wmim3qzlwreg" target="_blank" rel="noreferrer">
+                                            <span class="youtube--btn_ico"></span> 
+                                        </a>
+                                    </button>
+                            <p class="carousel-item__details--title2">Civil War</p>
+                            <p class="carousel-item__details--subtitle2">2016|Acción/Aventura</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Deadpool -->
+            <div class="item" data-categoria="accion" data-etiquetas="marvel deadpool super heroes" data-descripcion="2.- Lorem ipsum dolor sit amet consectetur.">
+                <div class="item-contenido">
+                    <img class="carousel-item__img2" src="https://m.media-amazon.com/images/I/413GDdEEakL._AC_.jpg" alt="Portada de Película">
+                    <div class="carousel-item__details2">
+                        <div class="carousel-item__text2">
+                            <button type="button" class="youtube--btn" aria-label="Abrir Pelícla">
+                                <a href="https://www.fembed.com/v/42pwkhzn6k4-3rg
+                                " target="_blank" rel="noreferrer">
+                                    <span class="youtube--btn_ico"></span> 
+                                </a>
+                            </button>
+                            <p class="carousel-item__details--title2">Deadpool</p>
+                            <p class="carousel-item__details--subtitle2">2016|Acción/Fantasía</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Deadpool 2 -->
+            <div class="item" data-categoria="accion" data-etiquetas="marvel deadpool super heroes" data-descripcion="2.- Lorem ipsum dolor sit amet consectetur.">
+                <div class="item-contenido">
+                    <img class="carousel-item__img2" src="https://peliculas-hd.net/storage/movies_tumbl/deadpool-2-cover-wte.jpg" alt="Portada de Película">
+                    <div class="carousel-item__details2">
+                        <div class="carousel-item__text2">
+                            <button type="button" class="youtube--btn" aria-label="Abrir Pelícla">
+                                <a href="https://femax20.com/v/zk043fj1x5rk1lg" target="_blank" rel="noreferrer">
+                                    <span class="youtube--btn_ico"></span> 
+                                </a>
+                            </button>
+                            <p class="carousel-item__details--title2">Deadpool 2</p>
+                            <p class="carousel-item__details--subtitle2">2018|Acción/Aventura</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Blade -->
+            <div class="item" data-categoria="accion" data-etiquetas="marvel blade caza vampiros super heroes" data-descripcion="2.- Lorem ipsum dolor sit amet consectetur.">
+                <div class="item-contenido">
+                    <img class="carousel-item__img2" src="https://pics.filmaffinity.com/Blade-397609933-mmed.jpg" alt="Portada de Película">
+                    <div class="carousel-item__details2">
+                        <div class="carousel-item__text2">
+                            <button type="button" class="youtube--btn" aria-label="Abrir Pelícla">
+                                <a href="https://femax20.com/v/nn6r3a2p0lw2-j5" target="_blank" rel="noreferrer">
+                                    <span class="youtube--btn_ico"></span> 
+                                </a>
+                            </button>
+                            <p class="carousel-item__details--title2">Blade</p>
+                            <p class="carousel-item__details--subtitle2">1998|Acción/Terror</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Blade 2 -->
+            <div class="item" data-categoria="accion" data-etiquetas="marvel blade caza vampiros super heroes" data-descripcion="2.- Lorem ipsum dolor sit amet consectetur.">
+                <div class="item-contenido">
+                    <img class="carousel-item__img2" src="https://pics.filmaffinity.com/Blade_II-730287165-large.jpg" alt="Portada de Película">
+                    <div class="carousel-item__details2">
+                        <div class="carousel-item__text2">
+                            <button type="button" class="youtube--btn" aria-label="Abrir Pelícla">
+                                <a href="https://femax20.com/v/10dwpujk1ypnl-3" target="_blank" rel="noreferrer">
+                                    <span class="youtube--btn_ico"></span> 
+                                </a>
+                            </button>
+                            <p class="carousel-item__details--title2">Blade II</p>
+                            <p class="carousel-item__details--subtitle2">2002|Acción/Terror</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Blade 3 -->
+            <div class="item" data-categoria="accion" data-etiquetas="marvel blade caza vampiros super heroes" data-descripcion="2.- Lorem ipsum dolor sit amet consectetur.">
+                <div class="item-contenido">
+                    <img class="carousel-item__img2" src="https://img.repelis.id/cover/blade-trinity.jpg" alt="Portada de Película">
+                    <div class="carousel-item__details2">
+                        <div class="carousel-item__text2">
+                            <button type="button" class="youtube--btn" aria-label="Abrir Pelícla">
+                                <a href="https://femax20.com/v/8q67jb8yk-dlp0q" target="_blank" rel="noreferrer">
+                                    <span class="youtube--btn_ico"></span> 
+                                </a>
+                            </button>
+                            <p class="carousel-item__details--title2">Blade: Trinity</p>
+                            <p class="carousel-item__details--subtitle2">2004|Acción/Terror</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Pantera Negra -->
+            <div class="item" data-categoria="accion" data-etiquetas="marvel pantera negra Pantera Negra super heroes" data-descripcion="2.- Lorem ipsum dolor sit amet consectetur.">
+                <div class="item-contenido">
+                    <img class="carousel-item__img2" src="https://lumiere-a.akamaihd.net/v1/images/p_blackpanther_19754_4ac13f07.jpeg?region=0%2C0%2C540%2C810" alt="Portada de Película">
+                    <div class="carousel-item__details2">
+                        <div class="carousel-item__text2">
+                            <button type="button" class="youtube--btn" aria-label="Abrir Pelícla">
+                                <a href="https://femax20.com/v/r4rz0ce8-nwx57q" target="_blank" rel="noreferrer">
+                                    <span class="youtube--btn_ico"></span> 
+                                </a>
+                            </button>
+                            <p class="carousel-item__details--title2">Pantera Negra</p>
+                            <p class="carousel-item__details--subtitle2">2018|Acción/Aventura</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Capitana Marvel -->
+            <div class="item" data-categoria="accion" data-etiquetas="marvel capitana super heroes" data-descripcion="2.- Lorem ipsum dolor sit amet consectetur.">
+                <div class="item-contenido">
+                    <img class="carousel-item__img2" src="https://reportajes.lavanguardia.com/stamp/wp-content/uploads/sites/19/2019/03/portada-ok.jpg" alt="Portada de Película">
+                    <div class="carousel-item__details2">
+                        <div class="carousel-item__text2">
+                            <button type="button" class="youtube--btn" aria-label="Abrir Pelícla">
+                                <a href="https://femax20.com/v/r4rz0ce8-nwj-l2" target="_blank" rel="noreferrer">
+                                    <span class="youtube--btn_ico"></span> 
+                                </a>
+                            </button>
+                            <p class="carousel-item__details--title2">Capitana Marvel</p>
+                            <p class="carousel-item__details--subtitle2">2019|Acción/Ciencia ficción</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Venom -->
+            <div class="item" data-categoria="accion" data-etiquetas="marvel Venom venom super heroes" data-descripcion="2.- Lorem ipsum dolor sit amet consectetur.">
+                <div class="item-contenido">
+                    <img class="carousel-item__img2" src="https://i.blogs.es/0aa698/dbhowryvwaaskyd.jpg-large/450_1000.jpeg" alt="Portada de Película">
+                    <div class="carousel-item__details2">
+                        <div class="carousel-item__text2">
+                            <button type="button" class="youtube--btn" aria-label="Abrir Pelícla">
+                                <a href="https://femax20.com/v/kx172h354xzqzm5" target="_blank" rel="noreferrer">
+                                    <span class="youtube--btn_ico"></span> 
+                                </a>
+                            </button>
+                            <p class="carousel-item__details--title2">Venom</p>
+                            <p class="carousel-item__details--subtitle2">2018| Acción/Ciencia ficción</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Doctor Strange -->
+            <div class="item" data-categoria="accion" data-etiquetas="marvel Doctor Strange doctor strange super heroes" data-descripcion="2.- Lorem ipsum dolor sit amet consectetur.">
+                <div class="item-contenido">
+                    <img class="carousel-item__img2" src="https://hips.hearstapps.com/es.h-cdn.co/fotoes/images/peliculas/doctor-strange-doctor-extrano/97464054-1-esl-ES/Doctor-Strange-Doctor-Extrano.jpg?resize=320:*" alt="Portada de Película">
+                    <div class="carousel-item__details2">
+                        <div class="carousel-item__text2">
+                            <button type="button" class="youtube--btn" aria-label="Abrir Pelícla">
+                                <a href="https://femax20.com/v/42pwkhznyql0476" target="_blank" rel="noreferrer">
+                                    <span class="youtube--btn_ico"></span> 
+                                </a>
+                            </button>
+                            <p class="carousel-item__details--title2">Doctor Strange</p>
+                            <p class="carousel-item__details--subtitle2">2016|Fantasía/Acción</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- El Rey León 2 -->
+            <div class="item" data-categoria="animacion" data-etiquetas="rey leon Rey Leeón león disney Disney Simba king lion" data-descripcion="2.- Lorem ipsum dolor sit amet consectetur.">
+                <div class="item-contenido">
+                    <img class="carousel-item__img2" src="https://pics.filmaffinity.com/El_rey_le_n_2_El_tesoro_de_Simba-741155687-large.jpg" alt="Portada de Película">
+                    <div class="carousel-item__details2">
+                        <div class="carousel-item__text2">
+                            <button type="button" class="youtube--btn" aria-label="Abrir Pelícla">
+                                <a href="https://uqload.com/embed-why6xo4orl8j.html" target="_blank" rel="noreferrer">
+                                    <span class="youtube--btn_ico"></span> 
+                                </a>
+                            </button>
+                            <p class="carousel-item__details--title2">El reino de Simba</p>
+                            <p class="carousel-item__details--subtitle2">1998|Musical/Infantil</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- El Rey León 3 -->
+            <div class="item" data-categoria="animacion" data-etiquetas="hakuna matata rey leon Rey Leeón león disney Disney Simba king lion" data-descripcion="2.- Lorem ipsum dolor sit amet consectetur.">
+                <div class="item-contenido">
+                    <img class="carousel-item__img2" src="https://storage.googleapis.com/isnottv_cine/lv_seo_items/lv_20812214057148a5468debd6584af5c0_420.jpg" alt="Portada de Película">
+                    <div class="carousel-item__details2">
+                        <div class="carousel-item__text2">
+                            <button type="button" class="youtube--btn" aria-label="Abrir Pelícla">
+                                <a href="https://uqload.com/embed-jmf1q3wrnvh2.html" target="_blank" rel="noreferrer">
+                                    <span class="youtube--btn_ico"></span> 
+                                </a>
+                            </button>
+                            <p class="carousel-item__details--title2">Hakuna Matata</p>
+                            <p class="carousel-item__details--subtitle2">2004|Infantil/Aventura</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Shrek -->
+            <div class="item" data-categoria="animacion" data-etiquetas="DreamWorks Shrek shrek" data-descripcion="2.- Lorem ipsum dolor sit amet consectetur.">
+                <div class="item-contenido">
+                    <img class="carousel-item__img2" src="https://i.redd.it/utfk956crz531.jpg" alt="Portada de Película">
+                    <div class="carousel-item__details2">
+                        <div class="carousel-item__text2">
+                            <button type="button" class="youtube--btn" aria-label="Abrir Pelícla">
+                                <a href="https://femax20.com/v/r4rz0ce8-37rp38" target="_blank" rel="noreferrer">
+                                    <span class="youtube--btn_ico"></span> 
+                                </a>
+                            </button>
+                            <p class="carousel-item__details--title2">Shrek</p>
+                            <p class="carousel-item__details--subtitle2">2001|Comedia/Fantasía</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Shrek 2 -->
+            <div class="item" data-categoria="animacion" data-etiquetas="DreamWorks Shrek shrek" data-descripcion="2.- Lorem ipsum dolor sit amet consectetur.">
+                <div class="item-contenido">
+                    <img class="carousel-item__img2" src="https://pics.filmaffinity.com/Shrek_2-288126730-mmed.jpg" alt="Portada de Película">
+                    <div class="carousel-item__details2">
+                        <div class="carousel-item__text2">
+                            <button type="button" class="youtube--btn" aria-label="Abrir Pelícla">
+                                <a href="https://femax20.com/v/2r0wmu23leg6m8r" target="_blank" rel="noreferrer">
+                                    <span class="youtube--btn_ico"></span> 
+                                </a>
+                            </button>
+                            <p class="carousel-item__details--title2">Shrek 2</p>
+                            <p class="carousel-item__details--subtitle2">2004|Infantil/Comedia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Shrek 3 -->
+            <div class="item" data-categoria="animacion" data-etiquetas="DreamWorks Shrek shrek" data-descripcion="2.- Lorem ipsum dolor sit amet consectetur.">
+                <div class="item-contenido">
+                    <img class="carousel-item__img2" src="https://www.ecartelera.com/carteles/1400/1498/001_p.jpg" alt="Portada de Película">
+                    <div class="carousel-item__details2">
+                        <div class="carousel-item__text2">
+                            <button type="button" class="youtube--btn" aria-label="Abrir Pelícla">
+                                <a href="https://femax20.com/v/5k13mfdey-rl-0d" target="_blank" rel="noreferrer">
+                                    <span class="youtube--btn_ico"></span> 
+                                </a>
+                            </button>
+                            <p class="carousel-item__details--title2">Shrek Tercero</p>
+                            <p class="carousel-item__details--subtitle2">2007|Infantil/Comedia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Shrek 4 -->
+            <div class="item" data-categoria="animacion" data-etiquetas="DreamWorks Shrek shrek" data-descripcion="2.- Lorem ipsum dolor sit amet consectetur.">
+                <div class="item-contenido">
+                    <img class="carousel-item__img2" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS4lDuhcFkOshqAW2IfG7A30wGJqO2K2rHnub4fbbHV0TlmQe2f" alt="Portada de Película">
+                    <div class="carousel-item__details2">
+                        <div class="carousel-item__text2">
+                            <button type="button" class="youtube--btn" aria-label="Abrir Pelícla">
+                                <a href="https://femax20.com/v/r4rz0ce8-37npr1" target="_blank" rel="noreferrer">
+                                    <span class="youtube--btn_ico"></span> 
+                                </a>
+                            </button>
+                            <p class="carousel-item__details--title2">Shrek para Siempre</p>
+                            <p class="carousel-item__details--subtitle2">2010|Infantil/Comedia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- La Mujer Maravilla 2 -->
+            <div class="item" data-categoria="accion" data-etiquetas="mujer maravilla Mujer Maravilla DC" data-descripcion="2.- Lorem ipsum dolor sit amet consectetur.">
+                <div class="item-contenido">
+                    <img class="carousel-item__img2" src="https://pics.filmaffinity.com/Mujer_Maravilla_1984-686758013-mmed.jpg" alt="Portada de Película">
+                    <div class="carousel-item__details2">
+                        <div class="carousel-item__text2">
+                            <button type="button" class="youtube--btn" aria-label="Abrir Pelícla">
+                                <a href="https://prueba.carlosarturomt.com/movie/LA%20MUJER%20MARAVILLA%201984%20(2020).mp4" target="_blank" rel="noreferrer">
+                                    <span class="youtube--btn_ico"></span> 
+                                </a>
+                            </button>
+                            <p class="carousel-item__details--title2">Mujer Maravilla 1984</p>
+                            <p class="carousel-item__details--subtitle2">2020|Fantasía/Aventura</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Carrie -->
+            <div class="item" data-categoria="accion" data-etiquetas="carrie Carrie Stephen King stephen king" data-descripcion="2.- Lorem ipsum dolor sit amet consectetur.">
+                <div class="item-contenido">
+                    <img class="carousel-item__img2" src="https://upload.wikimedia.org/wikipedia/en/thumb/0/06/Carrie_Domestic_One-sheet.jpg/220px-Carrie_Domestic_One-sheet.jpg" alt="Portada de Película">
+                    <div class="carousel-item__details2">
+                        <div class="carousel-item__text2">
+                            <button type="button" class="youtube--btn" aria-label="Abrir Pelícla">
+                                <a href="https://femax20.com/v/nn6r3a2pmegl120" target="_blank" rel="noreferrer">
+                                    <span class="youtube--btn_ico"></span> 
+                                </a>
+                            </button>
+                            <p class="carousel-item__details--title2">Carrie</p>
+                            <p class="carousel-item__details--subtitle2">2013|Terror/Suspenso</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Contacto sangriento -->
+            <div class="item" data-categoria="accion" data-etiquetas="contacto Sangriento contacto sangriento blood sport artes marciales" data-descripcion="2.- Lorem ipsum dolor sit amet consectetur.">
+                <div class="item-contenido">
+                    <img class="carousel-item__img2" src="https://i.pinimg.com/originals/6a/28/8c/6a288c67ace239ea0ef25283c8da2abc.jpg" alt="Portada de Película">
+                    <div class="carousel-item__details2">
+                        <div class="carousel-item__text2">
+                            <button type="button" class="youtube--btn" aria-label="Abrir Pelícla">
+                                <a href="https://femax20.com/v/3p2wmim3xly67-j" target="_blank" rel="noreferrer">
+                                    <span class="youtube--btn_ico"></span> 
+                                </a>
+                            </button>
+                            <p class="carousel-item__details--title2">Contacto Sangriento</p>
+                            <p class="carousel-item__details--subtitle2">1988|Acción/ArtesMarciales</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Terminator: Génesis -->
+            <div class="item" data-categoria="accion" data-etiquetas="Terminator terminator Génesis génesis genesis Genesis" data-descripcion="2.- Lorem ipsum dolor sit amet consectetur.">
+                <div class="item-contenido">
+                    <img class="carousel-item__img2" src="https://s3-eu-west-1.amazonaws.com/abandomedia/db/foto/db_11125_56.jpg" alt="Portada de Película">
+                    <div class="carousel-item__details2">
+                        <div class="carousel-item__text2">
+                            <button type="button" class="youtube--btn" aria-label="Abrir Pelícla">
+                                <a href="https://femax20.com/v/y1d34aen364lnep" target="_blank" rel="noreferrer">
+                                    <span class="youtube--btn_ico"></span> 
+                                </a>
+                            </button>
+                            <p class="carousel-item__details--title2">Terminator: Génesis</p>
+                            <p class="carousel-item__details--subtitle2">2015|Acción/CienciaFicción</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Proyecto Géminis -->
+            <div class="item" data-categoria="accion" data-etiquetas=" Proyecto Géminis proyecto geminis will smith Will Smith " data-descripcion="2.- Lorem ipsum dolor sit amet consectetur. ">
+                <div class="item-contenido ">
+                    <img class="carousel-item__img2 " src="https://mismomentosenlaspeliculas.files.wordpress.com/2019/10/geminis.jpg?w=640 " alt="Portada de Película ">
+                    <div class="carousel-item__details2 ">
+                        <div class="carousel-item__text2 ">
+                            <button type="button " class="youtube--btn " aria-label="Abrir Pelícla ">
+                                <a href="https://femax20.com/v/l82dkhnejzezg-0 " target="_blank " rel="noreferrer ">
+                                    <span class="youtube--btn_ico "></span> 
+                                </a>
+                            </button>
+                            <p class="carousel-item__details--title2 ">Proyecto Géminis</p>
+                            <p class="carousel-item__details--subtitle2 ">2019|Acción/CienciaFicción</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Battle Angel -->
+            <div class="item" data-categoria="accion" data-etiquetas="Alita alita Battle battle Angel angel Angel angel Batalla batalla" data-descripcion="2.- Lorem ipsum dolor sit amet consectetur. ">
+                <div class="item-contenido ">
+                    <img class="carousel-item__img2 " src="https://pics.filmaffinity.com/Alita_ngel_de_combate-715028190-mmed.jpg" alt="Portada de Película ">
+                    <div class="carousel-item__details2 ">
+                        <div class="carousel-item__text2 ">
+                            <button type="button " class="youtube--btn " aria-label="Abrir Pelícla ">
+                                <a href="https://femax20.com/v/-43w0cpy1m3583g " target="_blank " rel="noreferrer ">
+                                    <span class="youtube--btn_ico "></span> 
+                                </a>
+                            </button>
+                            <p class="carousel-item__details--title2 ">Battle Angel</p>
+                            <p class="carousel-item__details--subtitle2 ">2019|Acción/CienciaFicción</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- El Depredador -->
+            <div class="item" data-categoria="accion" data-etiquetas="Depredador depredador Depredator depredator" data-descripcion="2.- Lorem ipsum dolor sit amet consectetur. ">
+                <div class="item-contenido ">
+                    <img class="carousel-item__img2 " src="https://http2.mlstatic.com/D_NQ_NP_946935-MLA28863776665_122018-W.jpg" alt="Portada de Película ">
+                    <div class="carousel-item__details2 ">
+                        <div class="carousel-item__text2 ">
+                            <button type="button " class="youtube--btn " aria-label="Abrir Pelícla ">
+                                <a href="https://www.fembed.com/v/wr6emundgq424g6 " target="_blank " rel="noreferrer ">
+                                    <span class="youtube--btn_ico "></span> 
+                                </a>
+                            </button>
+                            <p class="carousel-item__details--title2 ">El Depredador</p>
+                            <p class="carousel-item__details--subtitle2 ">2018|Acción/CienciaFicción</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- El quinto element -->
+            <div class="item" data-categoria="accion" data-etiquetas="Quinto Elemento quinto elemento" data-descripcion="2.- Lorem ipsum dolor sit amet consectetur. ">
+                <div class="item-contenido ">
+                    <img class="carousel-item__img2 " src="https://i.pinimg.com/originals/2f/80/1a/2f801a13a6bcf7acddd9160702e00e92.jpg" alt="Portada de Película ">
+                    <div class="carousel-item__details2 ">
+                        <div class="carousel-item__text2 ">
+                            <button type="button " class="youtube--btn " aria-label="Abrir Pelícla ">
+                                <a href="https://www.fembed.com/v/em68gc-xne6dgy7 " target="_blank " rel="noreferrer ">
+                                    <span class="youtube--btn_ico "></span> 
+                                </a>
+                            </button>
+                            <p class="carousel-item__details--title2 ">El Quinto Elemento</p>
+                            <p class="carousel-item__details--subtitle2 ">1997|Acción/CienciaFicción</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ¿Qué pasó ayer? -->
+            <div class="item" data-categoria="comedia" data-etiquetas="Qué pasó ayer que paso" data-descripcion="2.- Lorem ipsum dolor sit amet consectetur. ">
+                <div class="item-contenido ">
+                    <img class="carousel-item__img2 " src="https://http2.mlstatic.com/D_NQ_NP_4160-MLA2771103790_062012-O.jpg" alt="Portada de Película ">
+                    <div class="carousel-item__details2 ">
+                        <div class="carousel-item__text2 ">
+                            <button type="button " class="youtube--btn " aria-label="Abrir Pelícla ">                
+                                <a href="https://prueba.carlosarturomt.com/movie/QUÉ%20PASÓ%20AYER%20(2009).mp4 " target="_blank " rel="noreferrer ">
+                                    <span class="youtube--btn_ico "></span> 
+                                </a>
+                            </button>
+                            <p class="carousel-item__details--title2 ">¿Qué pasó ayer?</p>
+                            <p class="carousel-item__details--subtitle2 ">2009|Comedia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- El lobo de Wall Street -->
+            <div class="item" data-categoria="comedia" data-etiquetas="El lobo de Wall Street wall street" data-descripcion="2.- Lorem ipsum dolor sit amet consectetur. ">
+                <div class="item-contenido ">
+                    <img class="carousel-item__img2 " src="https://zonavalue.com/wp-content/uploads/2019/10/lobo-wall-street-portada-716x1024.jpg" alt="Portada de Película ">
+                    <div class="carousel-item__details2 ">
+                        <div class="carousel-item__text2 ">
+                            <button type="button " class="youtube--btn " aria-label="Abrir Pelícla ">
+                                <a href="https://prueba.carlosarturomt.com/movie/EL%20LOBO%20DE%20WALL%20STREET%20(2013).mp4 " target="_blank " rel="noreferrer ">
+                                    <span class="youtube--btn_ico "></span> 
+                                </a>
+                            </button>
+                            <p class="carousel-item__details--title2 ">El lobo De WallStreet</p>
+                            <p class="carousel-item__details--subtitle2 ">2013|Comedia/Drama</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Prometeo -->
+            <div class="item" data-categoria="cienciaficcion" data-etiquetas="Prometeo prometeo" data-descripcion="2.- Lorem ipsum dolor sit amet consectetur. ">
+                <div class="item-contenido ">
+                    <img class="carousel-item__img2 " src="https://therwis.files.wordpress.com/2012/08/prometheus-dvd-cover-09nhgf.jpg" alt="Portada de Película">
+                    <div class="carousel-item__details2 ">
+                        <div class="carousel-item__text2 ">
+                            <button type="button " class="youtube--btn " aria-label="Abrir Pelícla ">
+                                <a href="https://prueba.carlosarturomt.com/movie/PROMETEO%20(2012).mp4 " target="_blank " rel="noreferrer ">
+                                    <span class="youtube--btn_ico "></span> 
+                                </a>
+                            </button>
+                            <p class="carousel-item__details--title2 ">Prometeo</p>
+                            <p class="carousel-item__details--subtitle2 ">2012|Ciencia ficción</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Interstellar -->
+            <div class="item" data-categoria="cienciaficcion" data-etiquetas="Interstellar interstellar interestelar Interestelar" data-descripcion="2.- Lorem ipsum dolor sit amet consectetur. ">
+                <div class="item-contenido ">
+                    <img class="carousel-item__img2 " src="https://cdnb.20m.es/cine-el-cielo-sobre-tatooine/files/2014/11/Interstellar-3.jpg" alt="Portada de Película">
+                    <div class="carousel-item__details2 ">
+                        <div class="carousel-item__text2 ">
+                            <button type="button " class="youtube--btn " aria-label="Abrir Pelícla ">                                    
+                                <a href="https://prueba.carlosarturomt.com/movie/INTERSTELLAR%20(2014).mp4 " target="_blank " rel="noreferrer ">
+                                    <span class="youtube--btn_ico "></span> 
+                                </a>
+                            </button>
+                            <p class="carousel-item__details--title2 ">Interstellar</p>
+                            <p class="carousel-item__details--subtitle2 ">2014|Ciencia ficción</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- La Llegada -->
+            <div class="item" data-categoria="cienciaficcion" data-etiquetas="La Lllegada la llegada Arrival arrival" data-descripcion="2.- Lorem ipsum dolor sit amet consectetur. ">
+                <div class="item-contenido ">
+                    <img class="carousel-item__img2 " src="https://i.ytimg.com/vi/SUiavMWW5Vo/movieposter.jpg" alt="Portada de Película">
+                    <div class="carousel-item__details2 ">
+                        <div class="carousel-item__text2 ">
+                            <button type="button " class="youtube--btn " aria-label="Abrir Pelícla ">
+                                <a href="https://prueba.carlosarturomt.com/movie/LA%20LLEGADA%20(2016).mp4 " target="_blank " rel="noreferrer ">
+                                    <span class="youtube--btn_ico "></span> 
+                                </a>
+                            </button>
+                            <p class="carousel-item__details--title2 ">La Llegada</p>
+                            <p class="carousel-item__details--subtitle2 ">2016|Ciencia ficción</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- <section>
+            <section class="carousel0 ">
+                <div class="carousel__container0 ">
+                    <div class="carousel_item0 ">
+                        <span class="carousel-item__img0 "></span>
+                        <div class="carousel-item__details0 ">
+                            <div class="carousel-item__text0 ">
+                                <p class="carousel-item__details--title0 ">WandaVision</p>
+                                <p class="carousel-item__details--subtitle0 "> <a href="https://prueba.carlosarturomt.com/wandaVision " target="_blank " rel="noreferrer ">Ver ahora</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section>
+            <section class="carousel0 ">
+                <div class="carousel__container0 ">
+                    <div class="carousel_item0 ">
+                        <span class="carousel-item__img0RM "></span>
+                        <div class="carousel-item__details0 ">
+                            <div class="carousel-item__text0 ">
+                                <p class="carousel-item__details--title0 ">Rick and Morty</p>
+                                <p class="carousel-item__details--subtitle0 "> <a href="https://prueba.carlosarturomt.com/rickMorty " target="_blank " rel="noreferrer ">Ver ahora</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section> -->
+        <!-- Últimas agregadas -->
+        <section>
+            <article class="carousel2 ">
+                <!-- <hgroup>
+                    <h2 class="carousel-title2 ">Últimas agregadas</h2>
+                </hgroup> -->
+                <div class="carousel__container2 " id=" ">
+                    <!-- Capitán América
+                    <div class="carousel_item2 " data-categoria="accion " data-etiquetas="marvel capitan america super heroes ">
+                        <img class="carousel-item__img2 " src="https://i.pinimg.com/originals/1d/3e/64/1d3e64cf36257fb215c67c350dc7398b.png " alt="Portada de Película ">
+                        <div class="carousel-item__details2 ">
+                            <div class="carousel-item__text2 ">
+                                <button type="button " class="youtube--btn " aria-label="Abrir Pelícla ">
+                                    <a href="https://femax20.com/v/dz48dtx7-yngwkx " target="_blank " rel="noreferrer ">
+                                        <span class="youtube--btn_ico "></span> 
+                                    </a>
+                                </button>
+                                <p class="carousel-item__details--title2 ">Capitán América</p>
+                                <p class="carousel-item__details--subtitle2 ">2011|Acción/Aventura</p>
+                            </div>
+                        </div>
+                    </div>
+                    Capitán América 2
+                    <div class="carousel_item2 " data-categoria="accion " data-etiquetas="marvel capitan america super heroes ">
+                        <img class="carousel-item__img2 " src="https://static.posters.cz/image/1300/poster/capitan-america-el-soldado-de-invierno-one-sheet-i19272.jpg " alt="Portada de Película ">
+                        <div class="carousel-item__details2 ">
+                            <div class="carousel-item__text2 ">
+                                <button type="button " class="youtube--btn " aria-label="Abrir Pelícla ">
+                                    <a href="https://femax20.com/v/8q67jb8yknjdxg4 " target="_blank " rel="noreferrer ">
+                                        <span class="youtube--btn_ico "></span> 
+                                    </a>
+                                </button>
+                                <p class="carousel-item__details--title2 ">El Soldado del Invierno</p>
+                                <p class="carousel-item__details--subtitle2 ">2014|Acción/Aventura</p>
+                            </div>
+                        </div>
+                    </div>
+                    Capitán América 3
+                    <div class="carousel_item2 " data-categoria="accion " data-etiquetas="marvel capitan america super heroes ">
+                        <img class="carousel-item__img2 " src="https://static.posters.cz/image/750/poster/capitan-america-civil-war-face-off-i30254.jpg " alt="Portada de Película ">
+                        <div class="carousel-item__details2 ">
+                            <div class="carousel-item__text2 ">
+                                <button type="button " class="youtube--btn " aria-label="Abrir Pelícla ">
+                                    <a href="https://femax20.com/v/3p2wmim3qzlwreg " target="_blank " rel="noreferrer ">
+                                        <span class="youtube--btn_ico "></span> 
+                                    </a>
+                                </button>
+                                <p class="carousel-item__details--title2 ">Civil War</p>
+                                <p class="carousel-item__details--subtitle2 ">2016|Acción/Aventura</p>
+                            </div>
+                        </div>
+                    </div>
+                    Deadpool
+                    <div class="carousel_item2 " data-categoria="accion " data-etiquetas="marvel deadpool super heroes ">
+                        <img class="carousel-item__img2 " src="https://m.media-amazon.com/images/I/413GDdEEakL._AC_.jpg " alt="Portada de Película ">
+                        <div class="carousel-item__details2 ">
+                            <div class="carousel-item__text2 ">
+                                <button type="button " class="youtube--btn " aria-label="Abrir Pelícla ">
+                                    <a href="https://www.fembed.com/v/42pwkhzn6k4-3rg " target="_blank " rel="noreferrer ">
+                                        <span class="youtube--btn_ico "></span> 
+                                    </a>
+                                </button>
+                                <p class="carousel-item__details--title2 ">Deadpool</p>
+                                <p class="carousel-item__details--subtitle2 ">2016|Acción/Fantasía</p>
+                            </div>
+                        </div>
+                    </div>
+                    Deadpool 2
+                    <div class="carousel_item2 " data-categoria="accion " data-etiquetas="marvel deadpool super heroes ">
+                        <img class="carousel-item__img2 " src="https://peliculas-hd.net/storage/movies_tumbl/deadpool-2-cover-wte.jpg " alt="Portada de Película ">
+                        <div class="carousel-item__details2 ">
+                            <div class="carousel-item__text2 ">
+                                <button type="button " class="youtube--btn " aria-label="Abrir Pelícla ">
+                                    <a href="https://femax20.com/v/zk043fj1x5rk1lg " target="_blank " rel="noreferrer ">
+                                        <span class="youtube--btn_ico "></span> 
+                                    </a>
+                                </button>
+                                <p class="carousel-item__details--title2 ">Deadpool 2</p>
+                                <p class="carousel-item__details--subtitle2 ">2018|Acción/Aventura</p>
+                            </div>
+                        </div>
+                    </div>
+                    Blade
+                    <div class="carousel_item2 " data-categoria="accion terror " data-etiquetas="marvel blade vampiros super heroes ">
+                        <img class="carousel-item__img2 " src="https://pics.filmaffinity.com/Blade-397609933-mmed.jpg " alt="Portada de Película ">
+                        <div class="carousel-item__details2 ">
+                            <div class="carousel-item__text2 ">
+                                <button type="button " class="youtube--btn " aria-label="Abrir Pelícla ">
+                                    <a href="https://femax20.com/v/nn6r3a2p0lw2-j5 " target="_blank " rel="noreferrer ">
+                                        <span class="youtube--btn_ico "></span> 
+                                    </a>
+                                </button>
+                                <p class="carousel-item__details--title2 ">Blade</p>
+                                <p class="carousel-item__details--subtitle2 ">1998|Acción/Terror</p>
+                            </div>
+                        </div>
+                    </div>
+                    Blade 2
+                    <div class="carousel_item2 " data-categoria="accion terror " data-etiquetas="marvel blade vampiros super heroes ">
+                        <img class="carousel-item__img2 " src="https://pics.filmaffinity.com/Blade_II-730287165-large.jpg " alt="Portada de Película ">
+                        <div class="carousel-item__details2 ">
+                            <div class="carousel-item__text2 ">
+                                <button type="button " class="youtube--btn " aria-label="Abrir Pelícla ">
+                                    <a href="https://femax20.com/v/10dwpujk1ypnl-3 " target="_blank " rel="noreferrer ">
+                                        <span class="youtube--btn_ico "></span> 
+                                    </a>
+                                </button>
+                                <p class="carousel-item__details--title2 ">Blade II</p>
+                                <p class="carousel-item__details--subtitle2 ">2002|Acción/Terror</p>
+                            </div>
+                        </div>
+                    </div>
+                    Blade 3
+                    <div class="carousel_item2 " data-categoria="accion terror " data-etiquetas="marvel blade vampiros super heroes ">
+                        <img class="carousel-item__img2 " src="https://img.repelis.id/cover/blade-trinity.jpg " alt="Portada de Película ">
+                        <div class="carousel-item__details2 ">
+                            <div class="carousel-item__text2 ">
+                                <button type="button " class="youtube--btn " aria-label="Abrir Pelícla ">
+                                    <a href="https://femax20.com/v/8q67jb8yk-dlp0q " target="_blank " rel="noreferrer ">
+                                        <span class="youtube--btn_ico "></span> 
+                                    </a>
+                                </button>
+                                <p class="carousel-item__details--title2 ">Blade: Trinity</p>
+                                <p class="carousel-item__details--subtitle2 ">2004|Acción/Terror</p>
+                            </div>
+                        </div>
+                    </div>
+                    Pantera Negra
+                    <div class="carousel_item2 " data-categoria="accion " data-etiquetas="marvel pantera negra super heroes ">
+                        <img class="carousel-item__img2 " src="https://lumiere-a.akamaihd.net/v1/images/p_blackpanther_19754_4ac13f07.jpeg?region=0%2C0%2C540%2C810 " alt="Portada de Película ">
+                        <div class="carousel-item__details2 ">
+                            <div class="carousel-item__text2 ">
+                                <button type="button " class="youtube--btn " aria-label="Abrir Pelícla ">
+                                    <a href="https://femax20.com/v/r4rz0ce8-nwx57q " target="_blank " rel="noreferrer ">
+                                        <span class="youtube--btn_ico "></span> 
+                                    </a>
+                                </button>
+                                <p class="carousel-item__details--title2 ">Pantera Negra</p>
+                                <p class="carousel-item__details--subtitle2 ">2018|Acción/Aventura</p>
+                            </div>
+                        </div>
+                    </div>
+                    Daredevil
+                    <div class="carousel_item2 " data-categoria="accion " data-etiquetas="marvel Daredevil super heroes ">
+                        <img class="carousel-item__img2 " src="https://i.pinimg.com/originals/af/a4/d5/afa4d5b790c7f997368cba016edd5bf3.jpg " alt="Portada de Película ">
+                        <div class="carousel-item__details2 ">
+                            <div class="carousel-item__text2 ">
+                                <button type="button " class="youtube--btn " aria-label="Abrir Pelícla ">
+                                    <a href="https://femax20.com/v/2r0wmu23lmywgkm " target="_blank " rel="noreferrer ">
+                                        <span class="youtube--btn_ico "></span> 
+                                    </a>
+                                </button>
+                                <p class="carousel-item__details--title2 ">Daredevil</p>
+                                <p class="carousel-item__details--subtitle2 ">2003|Acción/Fantasía</p>
+                            </div>
+                        </div>
+                    </div>
+                    Capitana Marvel
+                    <div class="carousel_item2 " data-categoria="accion " data-etiquetas="marvel capitana super heroes ">
+                        <img class="carousel-item__img2 " src="https://reportajes.lavanguardia.com/stamp/wp-content/uploads/sites/19/2019/03/portada-ok.jpg " alt="Portada de Película ">
+                        <div class="carousel-item__details2 ">
+                            <div class="carousel-item__text2 ">
+                                <button type="button " class="youtube--btn " aria-label="Abrir Pelícla ">
+                                    <a href="https://femax20.com/v/r4rz0ce8-nwj-l2 " target="_blank " rel="noreferrer ">
+                                        <span class="youtube--btn_ico "></span> 
+                                    </a>
+                                </button>
+                                <p class="carousel-item__details--title2 ">Capitana Marvel</p>
+                                <p class="carousel-item__details--subtitle2 ">2019|Acción/Ciencia ficción</p>
+                            </div>
+                        </div>
+                    </div>
+                    Venom
+                    <div class="carousel_item2 " data-categoria="accion " data-etiquetas="marvel venom spiderman super heroes ">
+                        <img class="carousel-item__img2 " src="https://i.blogs.es/0aa698/dbhowryvwaaskyd.jpg-large/450_1000.jpeg " alt="Portada de Película ">
+                        <div class="carousel-item__details2 ">
+                            <div class="carousel-item__text2 ">
+                                <button type="button " class="youtube--btn " aria-label="Abrir Pelícla ">
+                                    <a href="https://femax20.com/v/kx172h354xzqzm5 " target="_blank " rel="noreferrer ">
+                                        <span class="youtube--btn_ico "></span> 
+                                    </a>
+                                </button>
+                                <p class="carousel-item__details--title2 ">Venom</p>
+                                <p class="carousel-item__details--subtitle2 ">2018| Acción/Ciencia ficción</p>
+                            </div>
+                        </div>
+                    </div>
+                    Doctor Strange
+                    <div class="carousel_item2 " data-categoria="accion fantasia " data-etiquetas="marvel doctor strange super heroes ">
+                        <img class="carousel-item__img2 " src="https://hips.hearstapps.com/es.h-cdn.co/fotoes/images/peliculas/doctor-strange-doctor-extrano/97464054-1-esl-ES/Doctor-Strange-Doctor-Extrano.jpg?resize=320:* " alt="Portada de Película ">
+                        <div class="carousel-item__details2 ">
+                            <div class="carousel-item__text2 ">
+                                <button type="button " class="youtube--btn " aria-label="Abrir Pelícla ">
+                                    <a href="https://femax20.com/v/42pwkhznyql0476 " target="_blank " rel="noreferrer ">
+                                        <span class="youtube--btn_ico "></span> 
+                                    </a>
+                                </button>
+                                <p class="carousel-item__details--title2 ">Doctor Strange</p>
+                                <p class="carousel-item__details--subtitle2 ">2016|Fantasía/Acción</p>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- El Rey León 2
+                    <div class="carousel_item2 " data-categoria="animacion " data-etiquetas="disney rey leon ">
+                        <img class="carousel-item__img2 " src="https://pics.filmaffinity.com/El_rey_le_n_2_El_tesoro_de_Simba-741155687-large.jpg " alt="Portada de Película ">
+                        <div class="carousel-item__details2 ">
+                            <div class="carousel-item__text2 ">
+                                <button type="button " class="youtube--btn " aria-label="Abrir Pelícla ">
+                                    <a href="https://uqload.com/embed-why6xo4orl8j.html " target="_blank " rel="noreferrer ">
+                                        <span class="youtube--btn_ico "></span> 
+                                    </a>
+                                </button>
+                                <p class="carousel-item__details--title2 ">El reino de Simba</p>
+                                <p class="carousel-item__details--subtitle2 ">1998|Musical/Infantil</p>
+                            </div>
+                        </div>
+                    </div>
+                    El Rey León 3
+                    <div class="carousel_item2 " data-categoria="animacion " data-etiquetas="disney rey leon ">
+                        <img class="carousel-item__img2 " src="https://storage.googleapis.com/isnottv_cine/lv_seo_items/lv_20812214057148a5468debd6584af5c0_420.jpg " alt="Portada de Película ">
+                        <div class="carousel-item__details2 ">
+                            <div class="carousel-item__text2 ">
+                                <button type="button " class="youtube--btn " aria-label="Abrir Pelícla ">
+                                    <a href="https://uqload.com/embed-jmf1q3wrnvh2.html " target="_blank " rel="noreferrer ">
+                                        <span class="youtube--btn_ico "></span> 
+                                    </a>
+                                </button>
+                                <p class="carousel-item__details--title2 ">Hakuna Matata</p>
+                                <p class="carousel-item__details--subtitle2 ">2004|Infantil/Aventura</p>
+                            </div>
+                        </div>
+                    </div>
+                    Shrek
+                    <div class="carousel_item2 ">
+                        <img class="carousel-item__img2 " src="https://i.redd.it/utfk956crz531.jpg " alt="Portada de Película ">
+                        <div class="carousel-item__details2 ">
+                            <div class="carousel-item__text2 ">
+                                <button type="button " class="youtube--btn " aria-label="Abrir Pelícla ">
+                                    <a href="https://femax20.com/v/r4rz0ce8-37rp38 " target="_blank " rel="noreferrer ">
+                                        <span class="youtube--btn_ico "></span> 
+                                    </a>
+                                </button>
+                                <p class="carousel-item__details--title2 ">Shrek</p>
+                                <p class="carousel-item__details--subtitle2 ">2001|Comedia/Fantasía</p>
+                            </div>
+                        </div>
+                    </div>
+                    Shrek 2
+                    <div class="carousel_item2 ">
+                        <img class="carousel-item__img2 " src="https://pics.filmaffinity.com/Shrek_2-288126730-mmed.jpg " alt="Portada de Película ">
+                        <div class="carousel-item__details2 ">
+                            <div class="carousel-item__text2 ">
+                                <button type="button " class="youtube--btn " aria-label="Abrir Pelícla ">
+                                    <a href="https://femax20.com/v/2r0wmu23leg6m8r " target="_blank " rel="noreferrer ">
+                                        <span class="youtube--btn_ico "></span> 
+                                    </a>
+                                </button>
+                                <p class="carousel-item__details--title2 ">Shrek 2</p>
+                                <p class="carousel-item__details--subtitle2 ">2004|Infantil/Comedia</p>
+                            </div>
+                        </div>
+                    </div>
+                    Shrek 3
+                    <div class="carousel_item2 ">
+                        <img class="carousel-item__img2 " src="https://www.ecartelera.com/carteles/1400/1498/001_p.jpg " alt="Portada de Película ">
+                        <div class="carousel-item__details2 ">
+                            <div class="carousel-item__text2 ">
+                                <button type="button " class="youtube--btn " aria-label="Abrir Pelícla ">
+                                    <a href="https://femax20.com/v/5k13mfdey-rl-0d " target="_blank " rel="noreferrer ">
+                                        <span class="youtube--btn_ico "></span> 
+                                    </a>
+                                </button>
+                                <p class="carousel-item__details--title2 ">Shrek Tercero</p>
+                                <p class="carousel-item__details--subtitle2 ">2007|Infantil/Comedia</p>
+                            </div>
+                        </div>
+                    </div>
+                    Shrek 4
+                    <div class="carousel_item2 ">
+                        <img class="carousel-item__img2 " src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS4lDuhcFkOshqAW2IfG7A30wGJqO2K2rHnub4fbbHV0TlmQe2f " alt="Portada de Película ">
+                        <div class="carousel-item__details2 ">
+                            <div class="carousel-item__text2 ">
+                                <button type="button " class="youtube--btn " aria-label="Abrir Pelícla ">
+                                    <a href="https://femax20.com/v/r4rz0ce8-37npr1 " target="_blank " rel="noreferrer ">
+                                        <span class="youtube--btn_ico "></span> 
+                                    </a>
+                                </button>
+                                <p class="carousel-item__details--title2 ">Shrek para Siempre</p>
+                                <p class="carousel-item__details--subtitle2 ">2010|Infantil/Comedia</p>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- La Mujer Maravilla 2
+                    <div class="carousel_item2 ">
+                        <img class="carousel-item__img2 " src="https://pics.filmaffinity.com/Mujer_Maravilla_1984-686758013-mmed.jpg " alt="Portada de Película ">
+                        <div class="carousel-item__details2 ">
+                            <div class="carousel-item__text2 ">
+                                <button type="button " class="youtube--btn " aria-label="Abrir Pelícla ">
+                                    <a href="https://prueba.carlosarturomt.com/movie/LA%20MUJER%20MARAVILLA%201984%20(2020).mp4 " target="_blank " rel="noreferrer ">
+                                        <span class="youtube--btn_ico "></span> 
+                                    </a>
+                                </button>
+                                <p class="carousel-item__details--title2 ">Mujer Maravilla 1984</p>
+                                <p class="carousel-item__details--subtitle2 ">2020|Fantasía/Aventura</p>
+                            </div>
+                        </div>
+                    </div>
+                    Carrie
+                    <div class="carousel_item2 ">
+                        <img class="carousel-item__img2 " src="https://upload.wikimedia.org/wikipedia/en/thumb/0/06/Carrie_Domestic_One-sheet.jpg/220px-Carrie_Domestic_One-sheet.jpg " alt="Portada de Película ">
+                        <div class="carousel-item__details2 ">
+                            <div class="carousel-item__text2 ">
+                                <button type="button " class="youtube--btn " aria-label="Abrir Pelícla ">
+                                    <a href="https://femax20.com/v/nn6r3a2pmegl120 " target="_blank " rel="noreferrer ">
+                                        <span class="youtube--btn_ico "></span> 
+                                    </a>
+                                </button>
+                                <p class="carousel-item__details--title2 ">Carrie</p>
+                                <p class="carousel-item__details--subtitle2 ">2013|Terror/Suspenso</p>
+                            </div>
+                        </div>
+                    </div>
+                    Contacto sangriento
+                    <div class="carousel_item2 ">
+                        <img class="carousel-item__img2 " src="https://i.pinimg.com/originals/6a/28/8c/6a288c67ace239ea0ef25283c8da2abc.jpg " alt="Portada de Película ">
+                        <div class="carousel-item__details2 ">
+                            <div class="carousel-item__text2 ">
+                                <button type="button " class="youtube--btn " aria-label="Abrir Pelícla ">
+                                    <a href="https://femax20.com/v/3p2wmim3xly67-j " target="_blank " rel="noreferrer ">
+                                        <span class="youtube--btn_ico "></span> 
+                                    </a>
+                                </button>
+                                <p class="carousel-item__details--title2 ">Contacto Sangriento</p>
+                                <p class="carousel-item__details--subtitle2 ">1988|Acción/ArtesMarciales</p>
+                            </div>
+                        </div>
+                    </div>
+                    Terminator: Génesis
+                    <div class="carousel_item2 ">
+                        <img class="carousel-item__img2 " src="https://s3-eu-west-1.amazonaws.com/abandomedia/db/foto/db_11125_56.jpg " alt="Portada de Película ">
+                        <div class="carousel-item__details2 ">
+                            <div class="carousel-item__text2 ">
+                                <button type="button " class="youtube--btn " aria-label="Abrir Pelícla ">
+                                    <a href="https://femax20.com/v/y1d34aen364lnep " target="_blank " rel="noreferrer ">
+                                        <span class="youtube--btn_ico "></span> 
+                                    </a>
+                                </button>
+                                <p class="carousel-item__details--title2 ">Terminator: Génesis</p>
+                                <p class="carousel-item__details--subtitle2 ">2015|Acción/CienciaFicción</p>
+                            </div>
+                        </div>
+                    </div>
+                    Proyecto Géminis
+                    <div class="carousel_item2 ">
+                        <img class="carousel-item__img2 " src="https://mismomentosenlaspeliculas.files.wordpress.com/2019/10/geminis.jpg?w=640 " alt="Portada de Película ">
+                        <div class="carousel-item__details2 ">
+                            <div class="carousel-item__text2 ">
+                                <button type="button " class="youtube--btn " aria-label="Abrir Pelícla ">
+                                    <a href="https://femax20.com/v/l82dkhnejzezg-0 " target="_blank " rel="noreferrer ">
+                                        <span class="youtube--btn_ico "></span> 
+                                    </a>
+                                </button>
+                                <p class="carousel-item__details--title2 ">Proyecto Géminis</p>
+                                <p class="carousel-item__details--subtitle2 ">2019|Acción/CienciaFicción</p>
+                            </div>
+                        </div>
+                    </div>
+                    Battle Angel
+                    <div class="carousel_item2 ">
+                        <img class="carousel-item__img2 " src="https://pics.filmaffinity.com/Alita_ngel_de_combate-715028190-mmed.jpg " alt="Portada de Película ">
+                        <div class="carousel-item__details2 ">
+                            <div class="carousel-item__text2 ">
+                                <button type="button " class="youtube--btn " aria-label="Abrir Pelícla ">
+                                    <a href="https://femax20.com/v/-43w0cpy1m3583g " target="_blank " rel="noreferrer ">
+                                        <span class="youtube--btn_ico "></span> 
+                                    </a>
+                                </button>
+                                <p class="carousel-item__details--title2 ">Battle Angel</p>
+                                <p class="carousel-item__details--subtitle2 ">2019|Acción/CienciaFicción</p>
+                            </div>
+                        </div>
+                    </div>
+                    El Depredador
+                    <div class="carousel_item2 ">
+                        <img class="carousel-item__img2 " src="https://http2.mlstatic.com/D_NQ_NP_946935-MLA28863776665_122018-W.jpg " alt="Portada de Película ">
+                        <div class="carousel-item__details2 ">
+                            <div class="carousel-item__text2 ">
+                                <button type="button " class="youtube--btn " aria-label="Abrir Pelícla ">
+                                    <a href="https://www.fembed.com/v/wr6emundgq424g6 " target="_blank " rel="noreferrer ">
+                                        <span class="youtube--btn_ico "></span> 
+                                    </a>
+                                </button>
+                                <p class="carousel-item__details--title2 ">El Depredador</p>
+                                <p class="carousel-item__details--subtitle2 ">2018|Acción/CienciaFicción</p>
+                            </div>
+                        </div>
+                    </div>
+                    El quinto element
+                    <div class="carousel_item2 ">
+                        <img class="carousel-item__img2 " src="https://i.pinimg.com/originals/2f/80/1a/2f801a13a6bcf7acddd9160702e00e92.jpg " alt="Portada de Película ">
+                        <div class="carousel-item__details2 ">
+                            <div class="carousel-item__text2 ">
+                                <button type="button " class="youtube--btn " aria-label="Abrir Pelícla ">
+                                    <a href="https://www.fembed.com/v/em68gc-xne6dgy7 " target="_blank " rel="noreferrer ">
+                                        <span class="youtube--btn_ico "></span> 
+                                    </a>
+                                </button>
+                                <p class="carousel-item__details--title2 ">El Quinto Elemento</p>
+                                <p class="carousel-item__details--subtitle2 ">1997|Acción/CienciaFicción</p>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- ¿Qué pasó ayer?
+                    <div class="carousel_item2 ">
+                        <img class="carousel-item__img2 " src="https://http2.mlstatic.com/D_NQ_NP_4160-MLA2771103790_062012-O.jpg " alt="Portada de Película ">
+                        <div class="carousel-item__details2 ">
+                            <div class="carousel-item__text2 ">
+                                <button type="button " class="youtube--btn " aria-label="Abrir Pelícla ">                
+                                    <a href="https://prueba.carlosarturomt.com/movie/QUÉ%20PASÓ%20AYER%20(2009).mp4 " target="_blank " rel="noreferrer ">
+                                        <span class="youtube--btn_ico "></span> 
+                                    </a>
+                                </button>
+                                <p class="carousel-item__details--title2 ">¿Qué pasó ayer?</p>
+                                <p class="carousel-item__details--subtitle2 ">2009|Comedia</p>
+                            </div>
+                        </div>
+                    </div>
+                    El lobo de Wall Street
+                    <div class="carousel_item2 ">
+                        <img class="carousel-item__img2 " src="https://zonavalue.com/wp-content/uploads/2019/10/lobo-wall-street-portada-716x1024.jpg " alt="Portada de Película ">
+                        <div class="carousel-item__details2 ">
+                            <div class="carousel-item__text2 ">
+                                <button type="button " class="youtube--btn " aria-label="Abrir Pelícla ">
+                                    
+                                    <a href="https://prueba.carlosarturomt.com/movie/EL%20LOBO%20DE%20WALL%20STREET%20(2013).mp4 " target="_blank " rel="noreferrer ">
+                                        <span class="youtube--btn_ico "></span> 
+                                    </a>
+                                </button>
+                                <p class="carousel-item__details--title2 ">El lobo De WallStreet</p>
+                                <p class="carousel-item__details--subtitle2 ">2013|Comedia/Drama</p>
+                            </div>
+                        </div>
+                    </div>
+                    Prometeo
+                    <div class="carousel_item2 ">
+                        <img class="carousel-item__img2 " src="https://therwis.files.wordpress.com/2012/08/prometheus-dvd-cover-09nhgf.jpg " alt="Portada de Película ">
+                        <div class="carousel-item__details2 ">
+                            <div class="carousel-item__text2 ">
+                                <button type="button " class="youtube--btn " aria-label="Abrir Pelícla ">
+                                    <a href="https://prueba.carlosarturomt.com/movie/PROMETEO%20(2012).mp4 " target="_blank " rel="noreferrer ">
+                                        <span class="youtube--btn_ico "></span> 
+                                    </a>
+                                </button>
+                                <p class="carousel-item__details--title2 ">Prometeo</p>
+                                <p class="carousel-item__details--subtitle2 ">2012|Ciencia ficción</p>
+                            </div>
+                        </div>
+                    </div>
+                    Interstellar
+                    <div class="carousel_item2 ">
+                        <img class="carousel-item__img2 " src="https://cdnb.20m.es/cine-el-cielo-sobre-tatooine/files/2014/11/Interstellar-3.jpg " alt="Portada de Película ">
+                        <div class="carousel-item__details2 ">
+                            <div class="carousel-item__text2 ">
+                                <button type="button " class="youtube--btn " aria-label="Abrir Pelícla ">                                    
+                                    <a href="https://prueba.carlosarturomt.com/movie/INTERSTELLAR%20(2014).mp4 " target="_blank " rel="noreferrer ">
+                                        <span class="youtube--btn_ico "></span> 
+                                    </a>
+                                </button>
+                                <p class="carousel-item__details--title2 ">Interstellar</p>
+                                <p class="carousel-item__details--subtitle2 ">2014|Ciencia ficción</p>
+                            </div>
+                        </div>
+                    </div>
+                    La Llegada
+                    <div class="carousel_item2 ">
+                        <img class="carousel-item__img2 " src="https://i.ytimg.com/vi/SUiavMWW5Vo/movieposter.jpg " alt="Portada de Película ">
+                        <div class="carousel-item__details2 ">
+                            <div class="carousel-item__text2 ">
+                                <button type="button " class="youtube--btn " aria-label="Abrir Pelícla ">
+                                    <a href="https://prueba.carlosarturomt.com/movie/LA%20LLEGADA%20(2016).mp4 " target="_blank " rel="noreferrer ">
+                                        <span class="youtube--btn_ico "></span> 
+                                    </a>
+                                </button>
+                                <p class="carousel-item__details--title2 ">La Llegada</p>
+                                <p class="carousel-item__details--subtitle2 ">2016|Ciencia ficción</p>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </article>
+        </section>
+        <!-- Harry Potter -->
+        <section>
+            <article class="carousel1 ">
+                <hgroup>
+                    <h2 class="carousel-title1 ">Harry Potter</h2>
+                </hgroup>
+                <div class="carousel__container1 ">
+                    <div class="carousel_item1 ">
+                        <img class="carousel-item__img1 " src="http://es.web.img2.acsta.net/pictures/14/04/30/11/55/592219.jpg " alt="Portada de Película ">
+                        <div class="carousel-item__details1 ">
+                            <div class="carousel-item__text ">
+                                <button type="button " class="youtube--btn " aria-label="Abrir Pelícla ">
+                                    <a href="https://prueba.carlosarturomt.com/movie/HP/LA%20PIEDRA%20FILOSOFAL%20(2001).mp4 " target="_blank " rel="noreferrer ">
+                                        <span class="youtube--btn_ico "></span> 
+                                    </a>
+                                </button>
+                                <p class="carousel-item__details--title1 ">La Piedra Filosofal
+                                </p>
+                                <p class="carousel-item__details--subtitle1 ">2001</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel_item1 ">
+                        <img class="carousel-item__img1 " src="https://static.posters.cz/image/750/marco-de-plastico-harry-potter-chamber-of-secrets-i69609.jpg " alt="Portada de Película ">
+                        <div class="carousel-item__details1 ">
+                            <div class="carousel-item__text ">
+                                <button type="button " class="youtube--btn " aria-label="Abrir Pelícla ">
+                                <a href="https://prueba.carlosarturomt.com/movie/HP/LA%20CÁMARA%20SECRETA%20(2002)mp4.mp4 " target="_blank " rel="noreferrer ">
+                                    <span class="youtube--btn_ico "></span> 
+                                </a>
+                            </button>
+                                <p class="carousel-item__details--title1 ">La Cámara Secreta</p>
+                                <p class="carousel-item__details--subtitle1 ">2002</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel_item1 ">
+                        <img class="carousel-item__img1 " src="https://m.media-amazon.com/images/I/71J22VUSXNL._AC_SY741_.jpg " alt="Portada de Película ">
+                        <div class="carousel-item__details1 ">
+                            <div class="carousel-item__text ">
+                                <button type="button " class="youtube--btn " aria-label="Abrir Pelícla ">
+                                <a href="https://prueba.carlosarturomt.com/movie/HP/EL%20PRISIONERO%20DE%20AZKABAN%20(2004).mp4 " target="_blank " rel="noreferrer ">
+                                    <span class="youtube--btn_ico "></span> 
+                                </a>
+                            </button>
+                                <p class="carousel-item__details--title1 ">El Prisionero de Azkaban</p>
+                                <p class="carousel-item__details--subtitle1 ">2004</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel_item1 ">
+                        <img class="carousel-item__img1 " src="https://images-na.ssl-images-amazon.com/images/I/51pFF7a2j%2BL._AC_.jpg " alt="Portada de Película ">
+                        <div class="carousel-item__details1 ">
+                            <div class="carousel-item__text ">
+                                <button type="button " class="youtube--btn " aria-label="Abrir Pelícla ">
+                                <a href="https://prueba.carlosarturomt.com/movie/HP/EL%20CÁLIZ%20DE%20FUEGO%20(2005).mp4 " target="_blank " rel="noreferrer ">
+                                    <span class="youtube--btn_ico "></span> 
+                                </a>
+                            </button>
+                                <p class="carousel-item__details--title1 ">El Cáliz de Fuego</p>
+                                <p class="carousel-item__details--subtitle1 ">2005</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel_item1 ">
+                        <img class="carousel-item__img1 " src="https://image.posterlounge.es/images/l/1893813.jpg ">
+                        <div class="carousel-item__details1 ">
+                            <div class="carousel-item__text ">
+                                <button type="button " class="youtube--btn " aria-label="Abrir Pelícla ">
+                                <a href="https://prueba.carlosarturomt.com/movie/HP/LA%20ORDEN%20DEL%20FÉNIX%20(2007).mp4 " target="_blank " rel="noreferrer ">
+                                    <span class="youtube--btn_ico "></span> 
+                                </a>
+                            </button>
+                                <p class="carousel-item__details--title1 ">La Orden del Fénix</p>
+                                <p class="carousel-item__details--subtitle1 ">2007</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel_item1 ">
+                        <img class="carousel-item__img1 " src="https://in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/harry-potter-and-the-half-blood-prince-et00001559-03-02-2021-11-14-20.jpg " alt="Portada de Película ">
+                        <div class="carousel-item__details1 ">
+                            <div class="carousel-item__text ">
+                                <button type="button " class="youtube--btn " aria-label="Abrir Pelícla ">
+                                <a href="https://prueba.carlosarturomt.com/movie/HP/EL%20PRINCIPE%20MESTIZO%20(2009).mp4 " target="_blank " rel="noreferrer ">
+                                    <span class="youtube--btn_ico "></span> 
+                                </a>
+                            </button>
+                                <p class="carousel-item__details--title1 ">El Misterio del Príncipe</p>
+                                <p class="carousel-item__details--subtitle1 ">2009</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel_item1 ">
+                        <img class="carousel-item__img1 " src="https://m.media-amazon.com/images/I/51-zuZSKWjL.jpg " alt="Portada de Película ">
+                        <div class="carousel-item__details1 ">
+                            <div class="carousel-item__text ">
+                                <button type="button " class="youtube--btn " aria-label="Abrir Pelícla ">
+                                <a href="https://prueba.carlosarturomt.com/movie/HP/LAS%20RELIQUIAS%20DE%20LA%20MUERTE%20(2010).mp4 " target="_blank " rel="noreferrer ">
+                                    <span class="youtube--btn_ico "></span> 
+                                </a>
+                            </button>
+                                <p class="carousel-item__details--title1 ">Las Reliquias de la Muerte</p>
+                                <p class="carousel-item__details--subtitle1 ">2010</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel_item1 ">
+                        <img class="carousel-item__img1 " src="https://es.web.img2.acsta.net/medias/nmedia/18/78/64/49/19757335.jpg " alt="Portada de Película ">
+                        <div class="carousel-item__details1 ">
+                            <div class="carousel-item__text ">
+                                <button type="button " class="youtube--btn " aria-label="Abrir Pelícla ">
+                                <a href="https://prueba.carlosarturomt.com/movie/HP/LAS%20RELIQUIAS%20DE%20LA%20MUERTE%20(2011).mp4 " target="_blank " rel="noreferrer ">
+                                    <span class="youtube--btn_ico "></span> 
+                                </a>
+                            </button>
+                                <p class="carousel-item__details--title1 ">Las Reliquias de la Muerte</p>
+                                <p class="carousel-item__details--subtitle1 ">2011</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
         </section>
     </main>
+
+    <!----------------------------------- BOTÓN FLOTANTE Y PIE DE PÁGINA -------------------------------------------->
     <footer>
-        <hgroup>
-            <h3><a href="https://prueba.carlosarturomt.com">Carlos Arturo Miranda Trujano</a></h3>
-            <h3>&copy;2020 Proyecto <a href="https://platzi.com/home">Platzi</a></h3>
-        </hgroup>
+        <article class="container_info ">
+            <h4>
+                <span>&copy;</span>
+                <span>2021</span>
+                <span>UnaPelícula</span>
+            </h4>
+        </article>
+        <!-- <article class="container_social ">
+            <a href="https://www.facebook.com/psic.carlosarturomt1 " target="_blank " rel="noreferrer "> <span class="facebook "></span>
+            </a>
+            <a href="https://www.instagram.com/arturo.kennedy1 " target="_blank " rel="noreferrer "> <span class="instagram "></span>
+            </a>
+            <a href="https://github.com/carlosarturomt1 " target="_blank " rel="noreferrer ">
+                <span class="github "></span>
+            </a>
+            <a href="https://www.linkedin.com/in/carlosarturomt1 " target="_blank " rel="noreferrer "> <span class="linkedin "></span>
+            </a>
+        </article> -->
     </footer>
 </body>
+<!-- particles -->
+<script src="../particles.min.js "></script>
+<script src="js/app.js "></script>
+<script src="js/lib/stats.js "></script>
+<!-- scripts -->
+<!-- <script src="js/theme.js "></script> -->
+<script src="js/toggle.js "></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+<script src="https://kit.fontawesome.com/2c36e9b7b1.js " crossorigin="anonymous " aria-label="Dark Theme "></script>
+<script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js "></script>
+<script src="js/main.js "></script>
 
 </html>
