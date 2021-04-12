@@ -59,6 +59,27 @@
     }
 }
 
+.carousel-item__img-Marvel_Falcon {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://boxtv.com.mx/wp-content/uploads/2021/03/falcon-y-el-soldado-de-invierno-serie.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 500px) {
+    .carousel-item__img-Marvel_Falcon {
+        background-image: url(https://www.cinemascomics.com/wp-content/uploads/2021/02/poster-de-Falcon-y-el-Soldado-de-invierno.jpg?mrf-size=m);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        object-fit: cover;
+    }
+}
+
 .carouselRyM {
     width: 100%;
     margin-bottom: 30px;
